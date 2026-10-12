@@ -156,4 +156,4 @@ jobs:
           gh release create "$GITHUB_REF_NAME" "$DMG_PATH" build/appcast.xml \
             --repo "$GITHUB_REPOSITORY" \
             --title "繁體中文＋手動打卡版 $GITHUB_REF_NAME" \
-            --notes "個人改版：繁體中文介面、手動打卡、會自動更新（0.7.9 起）。未經 Apple 公證，第一次打開需在系統設定按「仍要打開」。"
+            --notes "個人改版：繁體中文介面、手動打卡、會自動更新（0.7.9 起）。未經 Apple 公證，第一次打開需到「系統設定 → 隱私權與安全性」按「強制打開」。"
