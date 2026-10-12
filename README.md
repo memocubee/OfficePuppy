@@ -1,193 +1,73 @@
 <p align="center">
-  <img src="OpenWorktimeTracker/Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128.png" width="96" height="96" alt="OpenWorktimeTracker app icon">
+  <img src="OpenWorktimeTracker/Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128.png" width="96" height="96" alt="App 圖示">
 </p>
 
-<h1 align="center">OpenWorktimeTracker</h1>
+<h1 align="center">OpenWorktimeTracker 繁中手動打卡版</h1>
 
 <p align="center">
-  <strong>Your workday, at a glance. Not another thing to manage.</strong><br>
-  Automatic time tracking for your Mac. Native, local-first, and quietly out of your way.
-</p>
-
-<p align="center">
-  <a href="https://github.com/64x-lunicorn/OpenWorktimeTracker/releases/latest"><img src="https://img.shields.io/badge/download-latest_release-007AFF?style=flat-square" alt="Download the latest release"></a>
-  <img src="https://img.shields.io/badge/macOS-14%2B-20232A?style=flat-square&amp;logo=apple" alt="Requires macOS 14 or later">
-  <a href="https://github.com/64x-lunicorn/OpenWorktimeTracker/actions/workflows/build.yml"><img src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=flat-square" alt="View the build workflow"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0-5856D6?style=flat-square" alt="GPL-3.0 license"></a>
+  <strong>今天到底上了幾小時班？看一眼 Mac 右上角就知道。</strong><br>
+  住在選單列的打卡小工具。免費、不用註冊，紀錄只存在你自己的電腦。
 </p>
 
 <p align="center">
-  <a href="https://github.com/64x-lunicorn/OpenWorktimeTracker/releases/latest"><strong>Download for macOS</strong></a>
+  <a href="https://github.com/memocubee/OpenWorktimeTracker/releases/latest"><strong>⬇️ 下載最新版</strong></a>
   &nbsp; · &nbsp;
-  <a href="https://64x-lunicorn.github.io/OpenWorktimeTracker/">Documentation</a>
-  &nbsp; · &nbsp;
-  <a href="CHANGELOG.md">What's new</a>
-  &nbsp; · &nbsp;
-  <a href="https://github.com/64x-lunicorn/OpenWorktimeTracker/issues">Feedback & ideas</a>
+  <sub>改自 <a href="https://github.com/64x-lunicorn/OpenWorktimeTracker">64x-lunicorn/OpenWorktimeTracker</a></sub>
 </p>
 
 <p align="center">
-  <a href="docs/public/screenshots/app-overview.png">
-    <img src="docs/public/screenshots/app-overview.png" width="1000" alt="OpenWorktimeTracker in dark and light mode: net work time, daily goal, start time, pauses, estimated finish, and recent workdays">
-  </a>
+  <img src="docs/public/screenshots/zh-today.png" width="340" alt="今天頁：實際工時、目標進度、上班時間、休息、預計做滿時間">
+  <img src="docs/public/screenshots/zh-history.png" width="340" alt="紀錄頁：近 6 個月工時熱度圖、每週直條圖、標出國定假日、上週統計">
 </p>
 
-<p align="center">
-  <sub>Real app views, rendered with sample workdays. Screenshots show the current main branch; the latest release may look different.<br>
-  Full-size screenshots: <a href="docs/public/screenshots/dashboard-dark.png">Dark mode</a> · <a href="docs/public/screenshots/dashboard-light.png">Light mode</a></sub>
-</p>
+## 這是給誰的
 
-## Less clock-watching. More living.
+在家工作、接案的時候，常常一坐下就做到天黑，回頭卻說不出今天做了幾個小時；月底要報工時，只能翻聊天紀錄慢慢拼回來。
 
-You opened your Mac, answered a few messages, joined a meeting, and took a coffee break.
-But when did you actually start? And how much have you worked?
+這個 App 幫你記。開工按一下「上班打卡」，右上角就開始跑時間；中途離開電腦一陣子，回來時它會問你剛剛那段要算工作還是休息；收工按「下班打卡」，今天的工時就存好了。
 
-**OpenWorktimeTracker keeps the answer in your menu bar.** It tracks your day automatically,
-accounts for pauses, and lets you know when you've reached your limits.
-No account to create. No browser tab to keep open. No Dock icon competing for attention.
+## 能做什麼
 
-| Made for your day | What you get |
-| --- | --- |
-| **Start working, not a stopwatch** | Launch at login and automatic workday detection across sleep, wake, and restarts. |
-| **Know when you're done** | Net work time, progress toward your daily goal, and an estimated finish time in one compact dashboard. |
-| **Meetings count, too** | After inactivity, choose whether the time was work or a pause. No guessing on your behalf. |
-| **Keep an eye on overtime** | Configurable orange/red menu-bar thresholds, notifications, recent workdays, and week/month summaries. |
-| **Make it yours** | Adjust times, add daily notes, customize thresholds, and switch naturally between light and dark mode. |
-| **Keep your data yours** | Local JSON logs, CSV export, a configurable storage folder, and optional iCloud Drive sync. |
+- **手動打卡**：按「上班打卡」才開始算，早上開電腦回個訊息不會被當成上班。
+- **離開電腦會問你**：講電話、開會可以算工作，去吃飯就算休息，由你決定。
+- **休息時間直接改**：忘了按暫停，回來改今天的休息總長就好。
+- **每週紀錄**：一週一頁，標出台灣國定假日；另外有最近 7 天的直條圖、近 6 個月的工時熱度圖。
+- **快超時會變色**：預設 8 小時達標、9 小時右上角變紅，都可以自己改。
+- **紀錄是你的**：存在你選的資料夾，也能匯出 CSV 用 Excel 打開。資料夾放在雲端同步夾，換電腦也看得到舊紀錄。
+- **有新版會通知**：出新版時跳通知、面板上方也會出現提示，按一下就打開下載頁。
 
-Also included: **desktop widgets**, **pause/resume shortcuts**, **English and German**, and **Sparkle auto-updates**.
+## 安裝
 
-## A small app that understands a workday
+需要 Apple 晶片的 Mac（M1 以後）、macOS 14 以上。Intel 晶片的 Mac 打不開。
 
-### Away from the keyboard doesn't always mean away from work
+1. 到[下載頁](https://github.com/memocubee/OpenWorktimeTracker/releases/latest)下載 `OpenWorktimeTracker-zh-版本號.dmg`。
+2. 打開下載的檔案，把 OpenWorktimeTracker 拖到 Finder 左邊的「應用程式」。
+3. 打開 App。第一次會跳出「無法驗證」的警告，先按「完成」關掉，再到「系統設定 → 隱私權與安全性」往下捲，在 OpenWorktimeTracker 那一行按「仍要打開」。
+4. 右上角選單列出現時間後，點開它，按「上班打卡」就開始了。
 
-A call, a whiteboard session, or a coffee break can all look like inactivity to a computer.
-When you return, you decide how that time should count.
+> 第一次會被擋，是因為這是個人改版，沒有向蘋果申請開發者認證。原始碼都公開在這一頁，可以自己檢查。
 
-<p align="center">
-  <a href="docs/public/screenshots/idle-decision.png">
-    <img src="docs/public/screenshots/idle-decision.png" width="380" alt="Inactivity prompt after 25 minutes, with choices to count the time as work, record a pause, or adjust the end of the workday">
-  </a>
-</p>
+想把紀錄存到別的地方：點開右上角 → 按「⋯」圓形按鈕 →「設定…」→「選擇紀錄資料夾…」。
 
-### Your thresholds. Your pace.
+## 更新
 
-Choose when the menu-bar timer changes color, how long inactivity takes to trigger a prompt,
-and when notifications should nudge you. Color thresholds and notification thresholds are independent.
+收到「有新版本」通知時，點通知（或面板上方的「下載」）下載新的 `.dmg`。先在面板按「⋯」→「結束程式」，再把新的 App 拖進「應用程式」、選「取代」，重新打開就好。以前的紀錄和設定都會留著。
 
-<p align="center">
-  <a href="docs/public/screenshots/settings.png">
-    <img src="docs/public/screenshots/settings.png" width="520" alt="General settings showing editable orange and red thresholds, automatic break durations, idle detection, and launch at login">
-  </a>
-</p>
+App 只會連到 GitHub 看最新的版本號，不會上傳你的紀錄；不想被通知，可以到「設定…」→「資料」分頁最下面關掉。
 
-**Break-aware by default.** The default calculation follows the 30/45-minute break thresholds
-in Germany's §4 ArbZG: more than 6 hours of work requires 30 minutes, more than 9 requires 45.
-Pauses you've already recorded reduce any additional automatic deduction.
+> 0.7.8 以前的版本還沒有通知功能，請手動下載一次最新版，之後就會自動提醒。
 
-> Automatic deductions are bookkeeping, not a substitute for actually taking a break or a guarantee of legal compliance.
-> [How break calculations work →](https://64x-lunicorn.github.io/OpenWorktimeTracker/features/breaks/)
+## 跟原版差在哪
 
-## Get started in a minute
+這是 [64x-lunicorn/OpenWorktimeTracker](https://github.com/64x-lunicorn/OpenWorktimeTracker) 的個人改版。原版是英文、德文介面，開電腦就自動開始算。這一版改了：
 
-**Requires macOS 14 Sonoma or later.**
+- 繁體中文介面
+- 預設手動打卡（設定裡可以關掉，改回自動開始）
+- 關掉原版的自動更新（避免原版把中文蓋掉），改成這一版出新版時通知你
+- 紀錄頁改成每週檢視、加上台灣國定假日，統計加了直條圖和熱度圖
 
-1. **[Download the latest release](https://github.com/64x-lunicorn/OpenWorktimeTracker/releases/latest)** and open its `.dmg`.
-2. **Drag OpenWorktimeTracker to Applications** and launch it.
-3. **Look in your menu bar**, not the Dock. Click the timer to see your day.
-4. Allow notifications if you'd like reminders, and adjust your preferences under **… → Settings**.
+想用原版或看英文說明，請到原作者的頁面。
 
-That's it. With **Launch at Login** enabled, it's ready the next time you sign in.
-Future releases arrive through the built-in Sparkle updater.
+## 授權
 
-### Your everyday controls
-
-| Want to… | Do this |
-| --- | --- |
-| Take a break | Click **Pause**; click **Resume** when you're back. |
-| Finish for today | Click **End Day**. Your completed total stays fixed. |
-| Correct a time | Use the pencil beside the start/end time, or open **… → Edit Log**. |
-| Take your data with you | Choose **… → Export CSV** or open your log folder. |
-| Open preferences | Choose **… → Settings**, or press `⌘ ,` while the app is active. |
-
-Global shortcuts: `Ctrl + Option + P` to pause/resume, `Ctrl + Option + E` to end the day.
-macOS may require Accessibility permission for global keyboard monitoring.
-
-## Local first. Open by design.
-
-Your daily logs are ordinary JSON files, not records locked inside a proprietary service.
-By default, they're stored here:
-
-```text
-~/Library/Application Support/OpenWorktimeTracker/logs/
-├── 2026-09-07.json
-└── 2026-09-08.json
-```
-
-- **No account or hosted tracking backend is required.**
-- **CSV export** makes it easy to use your hours elsewhere.
-- **iCloud Drive sync is optional** and off by default.
-- **You can inspect, back up, or move your logs** using normal files and folders.
-
-Auto-update checks use Sparkle/GitHub; enabling iCloud sync uses Apple's iCloud Drive.
-Local-first doesn't mean the app never connects to the network.
-
-## Native all the way down
-
-Built with **SwiftUI + AppKit**, not a web app inside a desktop window.
-An AppKit lifecycle owns the native menu-bar item and popover; SwiftUI renders the dashboard and settings.
-The tracking model uses `@Observable`, and persistence stays intentionally simple.
-
-| Part | Built with |
-| --- | --- |
-| Interface | SwiftUI, AppKit, adaptive design tokens |
-| Workday logic | Swift models, explicit state transitions, injectable clock and log store |
-| macOS integration | Login items, idle detection, notifications, WidgetKit |
-| Storage & updates | Daily JSON files, optional iCloud Drive, Sparkle 2 |
-| Development | XcodeGen, XCTest, SwiftLint, GitHub Actions |
-
-Curious about the internals? Start with the [architecture docs](https://64x-lunicorn.github.io/OpenWorktimeTracker/architecture/overview/)
-and the [domain vocabulary](CONTEXT.md).
-
-<details>
-<summary><strong>Build it yourself</strong></summary>
-
-You'll need macOS, Xcode 16 or later, and XcodeGen. SwiftLint is used for linting.
-
-```bash
-brew install xcodegen swiftlint
-git clone https://github.com/64x-lunicorn/OpenWorktimeTracker.git
-cd OpenWorktimeTracker
-make generate
-open OpenWorktimeTracker.xcodeproj
-```
-
-Select your signing team in Xcode before running the app. For a local ad-hoc build without
-a provisioning profile, use the included **Build OpenWorktimeTracker (Debug)** task in VS Code.
-Release signing is kept separate.
-
-```bash
-make test    # Run the XCTest suite with your signing setup
-make lint    # Check Swift style
-make build   # Build the Release configuration with your signing setup
-```
-
-More details: [Contributing](CONTRIBUTING.md) · [Build guide](https://64x-lunicorn.github.io/OpenWorktimeTracker/development/build/)
-
-</details>
-
-## Help make workdays a little better
-
-Found a rough edge? Have an idea that would make this fit your day?
-**[Open an issue](https://github.com/64x-lunicorn/OpenWorktimeTracker/issues)** — bug reports, UI feedback,
-and small improvements are welcome.
-
-Want to contribute code? See the [contribution guide](CONTRIBUTING.md).
-If the app is useful to you, a GitHub star helps other Mac users discover it.
-
----
-
-<p align="center">
-  <strong>Less admin. A clearer workday.</strong><br>
-  Free and open source under <a href="LICENSE">GPL-3.0</a>.
-</p>
+跟原版一樣採用 GPL-3.0：可以自由使用、修改、分享，分享改過的版本時也要公開原始碼。全文見 [LICENSE](LICENSE)。謝謝原作者 64x-lunicorn 把這個 App 開源出來。
