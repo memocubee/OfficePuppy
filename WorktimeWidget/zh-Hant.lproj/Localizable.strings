@@ -1,10 +1,10 @@
 /* Widget */
-"widget.state.running" = "社畜中";
-"widget.state.paused" = "摸魚中";
-"widget.state.ended" = "自由了！";
-"widget.state.idle" = "還在耍廢";
+"widget.state.running" = "上班中";
+"widget.state.paused" = "休息中";
+"widget.state.ended" = "已下班";
+"widget.state.idle" = "還沒上班";
 "widget.state.unavailable" = "沒有資料，請打開社畜汪汪。";
 "widget.since" = "從 %@";
 "widget.target" = "目標 %@";
-"widget.name" = "社畜汪汪";
-"widget.description" = "一眼看今天被公司借走多久。";
+"widget.name" = "工時";
+"widget.description" = "一眼看今天做了多久。";
