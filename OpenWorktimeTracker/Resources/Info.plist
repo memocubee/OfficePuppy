@@ -31,8 +31,10 @@
 		<key>LSUIElement</key>
 		<true />
 		<key>SUFeedURL</key>
-		<string>https://64x-lunicorn.github.io/OpenWorktimeTracker/appcast.xml</string>
+		<string>https://github.com/memocubee/OpenWorktimeTracker/releases/latest/download/appcast.xml</string>
 		<key>SUPublicEDKey</key>
-		<string>bf1DOT8dTdyYX6lmSNqZokzIkh7JC7GOkdZpqwDIKK8=</string>
+		<string>LntloQeAGcyX15PJU1hXR6yJPsqZMwYyV7mjkEWzoDc=</string>
+		<key>SUEnableAutomaticChecks</key>
+		<true />
 	</dict>
 </plist>

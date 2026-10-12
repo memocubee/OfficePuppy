@@ -222,9 +222,6 @@
 "logEditor.error.deleteFailed" = "Der Eintrag konnte nicht gelöscht werden. Die Zeiterfassung bleibt unverändert. Prüfen Sie den Protokollordner und versuchen Sie es erneut.";
 "settings.manualPunch" = "Manuell einstempeln (Tag per Start-Taste beginnen)";
 
-/* Update notice (zh-Hant fork) */
-"update.available" = "Version %@ ist verfügbar";
-"update.download" = "Herunterladen";
-"notification.update.title" = "Version %@ ist verfügbar";
-"notification.update.body" = "Klicken, um die Download-Seite zu öffnen. Danach die App in „Programme“ ziehen und die alte ersetzen.";
-"settings.updateCheck" = "Über neue Versionen benachrichtigen (fragt GitHub ab)";
+/* Sparkle updates (zh-Hant fork) */
+"menubar.checkForUpdates" = "Nach Updates suchen …";
+"settings.autoCheckUpdates" = "Automatisch nach Updates suchen (täglich über GitHub)";

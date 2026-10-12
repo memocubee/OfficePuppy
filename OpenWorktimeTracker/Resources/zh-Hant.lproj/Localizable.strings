@@ -222,9 +222,6 @@
 "logEditor.error.saveFailed" = "存不進去，你的修改還在。檢查紀錄資料夾後再試一次。";
 "logEditor.error.deleteFailed" = "刪不掉，紀錄沒有變動。檢查紀錄資料夾後再試一次。";
 
-/* Update notice (zh-Hant fork) */
-"update.available" = "有新版本 %@";
-"update.download" = "下載";
-"notification.update.title" = "有新版本 %@";
-"notification.update.body" = "點這裡打開下載頁，下載後拖進「應用程式」取代舊版。";
-"settings.updateCheck" = "有新版本時通知我（會連到 GitHub 查詢）";
+/* Sparkle updates (zh-Hant fork) */
+"menubar.checkForUpdates" = "檢查更新…";
+"settings.autoCheckUpdates" = "自動檢查更新（每天連 GitHub 查一次）";

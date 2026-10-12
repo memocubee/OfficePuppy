@@ -30,9 +30,8 @@ struct SettingsView: View {
         .manualPunchMode
     @State private var launchAtLogin = AppDelegate.isLaunchAtLoginEnabled
 
-    // Updates (zh-Hant fork)
-    @AppStorage(AppSettingsKey.updateCheckEnabled) private var updateCheck = AppDefaults
-        .updateCheckEnabled
+    // Updates (zh-Hant fork): Sparkle keeps the user's choice under this key
+    @AppStorage("SUEnableAutomaticChecks") private var autoCheckUpdates = true
 
     // Cloud
     @AppStorage(AppSettingsKey.iCloudSyncEnabled) private var iCloudSync = AppDefaults
@@ -247,8 +246,13 @@ struct SettingsView: View {
                     )
                     .foregroundStyle(.secondary)
                 }
-                Toggle(String(localized: "settings.updateCheck"), isOn: $updateCheck)
-                    .onChange(of: updateCheck) { _, _ in UpdateChecker.shared.checkIfNeeded() }
+                Toggle(String(localized: "settings.autoCheckUpdates"), isOn: $autoCheckUpdates)
+                    .onChange(of: autoCheckUpdates) { _, enabled in
+                        AppDelegate.current?.updater?.automaticallyChecksForUpdates = enabled
+                    }
+                Button(String(localized: "menubar.checkForUpdates")) {
+                    AppDelegate.current?.checkForUpdates()
+                }
             }
         }
         .formStyle(.grouped)

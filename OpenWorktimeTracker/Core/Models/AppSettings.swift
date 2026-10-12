@@ -17,7 +17,6 @@ enum AppSettingsKey {
     static let newDayStartHour = "newDayStartHour"
     static let iCloudSyncEnabled = "iCloudSyncEnabled"
     static let manualPunchMode = "manualPunchMode"
-    static let updateCheckEnabled = "updateCheckEnabled"
 }
 
 enum AppDefaults {
@@ -36,8 +35,6 @@ enum AppDefaults {
     static let iCloudSyncEnabled: Bool = false
     /// Off upstream; the zh-Hant fork turns it on in `ForkDefaults`.
     static let manualPunchMode: Bool = false
-    /// zh-Hant fork: tell the user when a newer release of the fork is out.
-    static let updateCheckEnabled: Bool = true
 }
 
 /// zh-Hant fork: personal defaults (manual clock-in, 8h goal, red at 9h, no

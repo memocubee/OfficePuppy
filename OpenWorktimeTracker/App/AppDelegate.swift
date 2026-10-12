@@ -6,7 +6,8 @@ import SwiftUI
 import UserNotifications
 
 final class AppDelegate: NSObject, NSApplicationDelegate {
-    private var updaterController: SPUStandardUpdaterController!
+    /// Nil under unit tests, which skip launch.
+    private var updaterController: SPUStandardUpdaterController?
     var workdayManager: WorkdayManager?
     private var menuBarController: MenuBarController?
 
@@ -19,8 +20,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.mainMenu = makeMainMenu()
         // Fetch a year's holiday calendar the bundle doesn't have yet
         HolidayStore.shared.refreshIfNeeded()
-        // Look for a newer release of this fork (Sparkle stays off)
-        UpdateChecker.shared.checkIfNeeded()
         // Set notification delegate so banners show for this menu bar app
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.delegate = self
@@ -34,10 +33,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             print("[Notifications] Permission granted: \(granted)")
         }
 
-        // Initialize Sparkle updater (fork: not started, so upstream releases
-        // never replace this build)
+        // Initialize Sparkle updater (fork: Info.plist points it at this fork's
+        // own signed appcast, so upstream releases never replace this build)
         updaterController = SPUStandardUpdaterController(
-            startingUpdater: false,
+            startingUpdater: true,
             updaterDelegate: nil,
             userDriverDelegate: nil
         )
@@ -58,6 +57,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let settings = appMenu.addItem(
             withTitle: String(localized: "menubar.settings"), action: #selector(openSettings), keyEquivalent: ",")
         settings.target = self
+        appMenu.addItem(
+            withTitle: String(localized: "menubar.checkForUpdates"), action: #selector(checkForUpdates),
+            keyEquivalent: ""
+        ).target = self
         appMenu.addItem(.separator())
         appMenu.addItem(
             withTitle: String(localized: "menubar.quit"),
@@ -111,8 +114,18 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     // MARK: - Sparkle
 
-    var updater: SPUUpdater {
-        updaterController.updater
+    static var current: AppDelegate? {
+        NSApp.delegate as? AppDelegate
+    }
+
+    var updater: SPUUpdater? {
+        updaterController?.updater
+    }
+
+    /// Shows Sparkle's window even though this menu bar app has no Dock icon.
+    @MainActor @objc func checkForUpdates() {
+        NSApp.activate(ignoringOtherApps: true)
+        updaterController?.checkForUpdates(nil)
     }
 }
 
@@ -126,17 +139,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
             @escaping (UNNotificationPresentationOptions) -> Void
     ) {
         completionHandler([.banner, .sound, .list])
-    }
-
-    func userNotificationCenter(
-        _ center: UNUserNotificationCenter,
-        didReceive response: UNNotificationResponse,
-        withCompletionHandler completionHandler: @escaping () -> Void
-    ) {
-        if response.notification.request.identifier == UpdateChecker.notificationIdentifier {
-            NSWorkspace.shared.open(UpdateChecker.releasesPage)
-        }
-        completionHandler()
     }
 }
 
@@ -153,8 +155,14 @@ final class MenuBarController: NSObject {
         self.manager = manager
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         super.init()
-        let content = MenuBarView(onOpenSettings: { [weak self] in self?.showSettings() })
-            .environment(manager)
+        let content = MenuBarView(
+            onOpenSettings: { [weak self] in self?.showSettings() },
+            onCheckForUpdates: { [weak self] in
+                self?.popover.performClose(nil)
+                AppDelegate.current?.checkForUpdates()
+            }
+        )
+        .environment(manager)
         popover.contentViewController = NSHostingController(rootView: content)
         popover.contentSize = NSSize(
             width: DesignTokens.popoverWidth, height: DesignTokens.popoverMinHeight)
@@ -184,7 +192,6 @@ final class MenuBarController: NSObject {
         if popover.isShown {
             popover.performClose(nil)
         } else if let button = statusItem.button {
-            UpdateChecker.shared.checkIfNeeded()
             NSApp.activate(ignoringOtherApps: true)
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
             popover.contentViewController?.view.window?.makeKey()

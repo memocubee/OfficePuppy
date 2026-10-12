@@ -89,25 +89,4 @@ final class NotificationManager: WorkdayNotificationSending {
             }
         }
     }
-
-    // MARK: - Update Notification
-
-    /// Clicking it opens the release page (handled in AppDelegate).
-    func sendUpdateNotification(version: String) {
-        let content = UNMutableNotificationContent()
-        content.title = String(format: String(localized: "notification.update.title"), version)
-        content.body = String(localized: "notification.update.body")
-        content.sound = .default
-
-        let request = UNNotificationRequest(
-            identifier: UpdateChecker.notificationIdentifier,
-            content: content,
-            trigger: nil
-        )
-        center.add(request) { error in
-            if let error {
-                logger.error("Failed to add notification: \(error.localizedDescription)")
-            }
-        }
-    }
 }

@@ -20,14 +20,11 @@ struct MenuBarView: View {
     @Environment(WorkdayManager.self) private var manager
     @AppStorage(MenuBarTab.storageKey) private var selectedTab: MenuBarTab = .today
     let onOpenSettings: () -> Void
+    var onCheckForUpdates: () -> Void = {}
 
     var body: some View {
         VStack(spacing: 0) {
             tabPicker
-
-            if let update = UpdateChecker.shared.available {
-                updateBanner(update)
-            }
 
             switch selectedTab {
             case .today:
@@ -80,35 +77,6 @@ struct MenuBarView: View {
         .frame(maxWidth: .infinity)
         .padding(.horizontal, DesignTokens.Spacing.lg)
         .padding(.top, DesignTokens.Spacing.md)
-    }
-
-    // MARK: - Update
-
-    /// zh-Hant fork: a newer release is out; the button opens its page.
-    private func updateBanner(_ update: UpdateChecker.Release) -> some View {
-        Button {
-            NSWorkspace.shared.open(update.page)
-        } label: {
-            HStack(spacing: DesignTokens.Spacing.sm) {
-                Image(systemName: "arrow.down.circle.fill")
-                    .accessibilityHidden(true)
-                Text(String(format: String(localized: "update.available"), update.version))
-                Spacer()
-                Text("update.download")
-                Image(systemName: "arrow.up.right")
-                    .accessibilityHidden(true)
-            }
-            .font(DesignTokens.Typography.labelSmall)
-            .foregroundStyle(DesignTokens.Colors.accentBlue)
-            .padding(.horizontal, DesignTokens.Spacing.md)
-            .padding(.vertical, DesignTokens.Spacing.sm)
-            .background(DesignTokens.Colors.accentBlue.opacity(0.12))
-            .clipShape(RoundedRectangle(cornerRadius: DesignTokens.Radius.sm))
-            .contentShape(Rectangle())
-        }
-        .buttonStyle(.plain)
-        .padding(.horizontal, DesignTokens.Spacing.lg)
-        .padding(.top, DesignTokens.Spacing.sm)
     }
 
     // MARK: - Header
@@ -217,6 +185,9 @@ struct MenuBarView: View {
                 }
             }
             Divider()
+            Button(String(localized: "menubar.checkForUpdates")) {
+                onCheckForUpdates()
+            }
             Button(String(localized: "menubar.settings")) {
                 onOpenSettings()
             }
