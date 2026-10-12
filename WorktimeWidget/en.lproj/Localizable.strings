@@ -3,7 +3,7 @@
 "widget.state.paused" = "Paused";
 "widget.state.ended" = "Done";
 "widget.state.idle" = "Idle";
-"widget.state.unavailable" = "No current data. Open OpenWorktimeTracker.";
+"widget.state.unavailable" = "No current data. Open Office Puppy.";
 "widget.since" = "since %@";
 "widget.target" = "Goal %@";
 "widget.name" = "Work Time";

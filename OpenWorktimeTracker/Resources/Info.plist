@@ -11,7 +11,9 @@
 			<string>de</string>
 		</array>
 		<key>CFBundleDisplayName</key>
-		<string>OpenWorktimeTracker</string>
+		<string>Office Puppy</string>
+		<key>LSHasLocalizedDisplayName</key>
+		<true />
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
