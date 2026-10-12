@@ -3,7 +3,7 @@
 "widget.state.paused" = "休息中";
 "widget.state.ended" = "已下班";
 "widget.state.idle" = "還沒上班";
-"widget.state.unavailable" = "沒有資料，請打開社畜汪汪。";
+"widget.state.unavailable" = "沒有資料，請打開 Office Puppy。";
 "widget.since" = "從 %@";
 "widget.target" = "目標 %@";
 "widget.name" = "工時";

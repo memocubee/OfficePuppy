@@ -2,9 +2,7 @@
   <img src="OpenWorktimeTracker/Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128.png" width="96" height="96" alt="App 圖示">
 </p>
 
-<h1 align="center">社畜汪汪 🐶</h1>
-
-<p align="center"><sub>Office Puppy</sub></p>
+<h1 align="center">Office Puppy 🐶</h1>
 
 <p align="center">
   <strong>你以為在家工作就不用上班嗎！你錯了！</strong><br>
@@ -43,8 +41,8 @@
 需要 Apple 晶片的 Mac（M1 以後）、macOS 14 以上。Intel 晶片的 Mac 打不開。
 
 1. 到[下載頁](https://github.com/memocubee/OpenWorktimeTracker/releases/latest)下載 `.dmg` 結尾的那個檔案（例如 `OfficePuppy-0.7.10.dmg`）。
-2. 打開下載的檔案，把「社畜汪汪」拖到旁邊的「應用程式」資料夾。
-3. 打開 App。第一次會跳出警告、打不開，先按「完成」關掉，再到「系統設定 → 隱私權與安全性」往下捲，看到「已阻擋「社畜汪汪」以保護你的Mac」那行，按「強制打開」。如果又跳一次視窗，一樣按「強制打開」，可能會要你輸入電腦密碼。
+2. 打開下載的檔案，把「Office Puppy」拖到旁邊的「應用程式」資料夾。
+3. 打開 App。第一次會跳出警告、打不開，先按「完成」關掉，再到「系統設定 → 隱私權與安全性」往下捲，看到「已阻擋「Office Puppy」以保護你的Mac」那行，按「強制打開」。如果又跳一次視窗，一樣按「強制打開」，可能會要你輸入電腦密碼。
 4. 它問能不能傳送通知時按「允許」，做滿目標時數會提醒你。
 5. 右上角選單列出現時間後，點開它，按「上班打卡」就開始了。
 
@@ -72,7 +70,7 @@ App 每天會連到 GitHub 看一次有沒有新版本。有的話會跳出這�
 
 這是 [64x-lunicorn/OpenWorktimeTracker](https://github.com/64x-lunicorn/OpenWorktimeTracker) 的個人改版。原版是英文、德文介面，開電腦就自動開始算。這一版改了：
 
-- 繁體中文介面，改名「社畜汪汪」
+- 繁體中文介面，改名「Office Puppy」
 - 預設手動打卡（設定裡可以關掉，改回自動開始）
 - 自動更新改成接這一版自己的新版本，不會被原版的英文版蓋掉
 - 紀錄頁改成每週檢視、加上台灣國定假日，統計加了直條圖和熱度圖
