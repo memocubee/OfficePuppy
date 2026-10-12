@@ -31,7 +31,7 @@
 		<key>LSUIElement</key>
 		<true />
 		<key>SUFeedURL</key>
-		<string>https://github.com/memocubee/OpenWorktimeTracker/releases/latest/download/appcast.xml</string>
+		<string>https://github.com/memocubee/OfficePuppy/releases/latest/download/appcast.xml</string>
 		<key>SUPublicEDKey</key>
 		<string>LntloQeAGcyX15PJU1hXR6yJPsqZMwYyV7mjkEWzoDc=</string>
 		<key>SUEnableAutomaticChecks</key>

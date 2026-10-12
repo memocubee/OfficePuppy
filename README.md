@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/memocubee/OpenWorktimeTracker/releases/latest"><strong>⬇️ 下載最新版</strong></a>
+  <a href="https://github.com/memocubee/OfficePuppy/releases/latest"><strong>⬇️ 下載最新版</strong></a>
   &nbsp; · &nbsp;
   <sub>改自 <a href="https://github.com/64x-lunicorn/OpenWorktimeTracker">64x-lunicorn/OpenWorktimeTracker</a></sub>
 </p>
@@ -40,7 +40,7 @@
 
 需要 Apple 晶片的 Mac（M1 以後）、macOS 14 以上。Intel 晶片的 Mac 打不開。
 
-1. 到[下載頁](https://github.com/memocubee/OpenWorktimeTracker/releases/latest)下載 `.dmg` 結尾的那個檔案（例如 `OfficePuppy-0.7.10.dmg`）。
+1. 到[下載頁](https://github.com/memocubee/OfficePuppy/releases/latest)下載 `.dmg` 結尾的那個檔案（例如 `OfficePuppy-0.7.12.dmg`）。
 2. 打開下載的檔案，把「Office Puppy」拖到旁邊的「應用程式」資料夾。
 3. 打開 App。第一次會跳出警告、打不開，先按「完成」關掉，再到「系統設定 → 隱私權與安全性」往下捲，看到「已阻擋「Office Puppy」以保護你的Mac」那行，按「強制打開」。如果又跳一次視窗，一樣按「強制打開」，可能會要你輸入電腦密碼。
 4. 它問能不能傳送通知時按「允許」，做滿目標時數會提醒你。
