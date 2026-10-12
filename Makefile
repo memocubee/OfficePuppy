@@ -6,16 +6,16 @@ generate:
 
 # Build the app
 build: generate
-	xcodebuild -project OpenWorktimeTracker.xcodeproj \
-		-scheme OpenWorktimeTracker \
+	xcodebuild -project OfficePuppy.xcodeproj \
+		-scheme OfficePuppy \
 		-configuration Release \
 		-derivedDataPath build \
 		build
 
 # Run tests
 test: generate
-	xcodebuild -project OpenWorktimeTracker.xcodeproj \
-		-scheme OpenWorktimeTrackerTests \
+	xcodebuild -project OfficePuppy.xcodeproj \
+		-scheme OfficePuppyTests \
 		-configuration Debug \
 		-derivedDataPath build \
 		test
@@ -34,4 +34,4 @@ dmg: build
 
 # Full release pipeline (local)
 release: build dmg
-	@echo "Release build complete. DMG at build/OpenWorktimeTracker.dmg"
+	@echo "Release build complete. DMG at build/OfficePuppy.dmg"

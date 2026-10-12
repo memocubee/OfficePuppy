@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 env:
-  APP_NAME: OpenWorktimeTracker
+  APP_NAME: OfficePuppy
   # What people see: the .app, DMG and release names
   DISPLAY_NAME: Office Puppy
   SPARKLE_VERSION: "2.10.0"
@@ -97,7 +97,7 @@ jobs:
         run: |
           xcodebuild test \
             -project $APP_NAME.xcodeproj \
-            -scheme OpenWorktimeTrackerTests \
+            -scheme OfficePuppyTests \
             -configuration Debug \
             -derivedDataPath build-test \
             -destination 'platform=macOS' \

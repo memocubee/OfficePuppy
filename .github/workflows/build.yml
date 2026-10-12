@@ -30,14 +30,14 @@ jobs:
       - name: Resolve SPM Dependencies
         run: |
           xcodebuild -resolvePackageDependencies \
-            -project OpenWorktimeTracker.xcodeproj \
-            -scheme OpenWorktimeTracker
+            -project OfficePuppy.xcodeproj \
+            -scheme OfficePuppy
 
       - name: Build
         run: |
           xcodebuild build \
-            -project OpenWorktimeTracker.xcodeproj \
-            -scheme OpenWorktimeTracker \
+            -project OfficePuppy.xcodeproj \
+            -scheme OfficePuppy \
             -configuration Debug \
             -destination 'platform=macOS' \
             CODE_SIGN_IDENTITY="-" \
@@ -47,8 +47,8 @@ jobs:
       - name: Test
         run: |
           xcodebuild test \
-            -project OpenWorktimeTracker.xcodeproj \
-            -scheme OpenWorktimeTrackerTests \
+            -project OfficePuppy.xcodeproj \
+            -scheme OfficePuppyTests \
             -configuration Debug \
             -destination 'platform=macOS' \
             CODE_SIGN_IDENTITY="-" \

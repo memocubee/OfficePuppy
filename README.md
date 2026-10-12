@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="OpenWorktimeTracker/Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128.png" width="96" height="96" alt="App 圖示">
+  <img src="OfficePuppy/Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128.png" width="96" height="96" alt="App 圖示">
 </p>
 
 <h1 align="center">Office Puppy 🐶</h1>
@@ -64,7 +64,7 @@ App 每天會連到 GitHub 看一次有沒有新版本。有的話會跳出這�
 - 不想自動檢查：「設定…」→「資料」分頁最下面關掉
 - App 只會下載版本資訊和新版程式，不會上傳你的紀錄；每一版都有簽名，確認是這裡發的才會安裝
 
-> 0.7.8 以前的版本（那時還叫 OpenWorktimeTracker）不會自己更新，請手動換一次：先在面板按「⋯」→「結束程式」，下載最新版，把 App 拖進「應用程式」、選「取代」。之後就會自己更新了。
+> 0.7.x 的舊版（那時還叫 OpenWorktimeTracker）不會自己更新到 0.8 以後，請手動換一次：先在面板按「⋯」→「結束程式」，下載最新版拖進「應用程式」，再把舊的那個丟到垃圾桶。第一次打開新版會自動把舊版的設定和紀錄搬過來，通知和開機自動打開要重新允許一次。之後就會自己更新了。
 
 ## 跟原版差在哪
 
