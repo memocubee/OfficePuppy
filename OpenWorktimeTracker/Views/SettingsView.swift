@@ -30,6 +30,10 @@ struct SettingsView: View {
         .manualPunchMode
     @State private var launchAtLogin = AppDelegate.isLaunchAtLoginEnabled
 
+    // Updates (zh-Hant fork)
+    @AppStorage(AppSettingsKey.updateCheckEnabled) private var updateCheck = AppDefaults
+        .updateCheckEnabled
+
     // Cloud
     @AppStorage(AppSettingsKey.iCloudSyncEnabled) private var iCloudSync = AppDefaults
         .iCloudSyncEnabled
@@ -243,6 +247,8 @@ struct SettingsView: View {
                     )
                     .foregroundStyle(.secondary)
                 }
+                Toggle(String(localized: "settings.updateCheck"), isOn: $updateCheck)
+                    .onChange(of: updateCheck) { _, _ in UpdateChecker.shared.checkIfNeeded() }
             }
         }
         .formStyle(.grouped)

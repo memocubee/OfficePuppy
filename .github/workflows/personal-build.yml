@@ -65,6 +65,20 @@ jobs:
           name: dmg
           path: ${{ env.DMG_PATH }}
 
+      # Manual runs also run the unit tests; tag builds skip them so a release
+      # is never held up by a flaky UI test.
+      - name: Test
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          xcodebuild test \
+            -project $APP_NAME.xcodeproj \
+            -scheme OpenWorktimeTrackerTests \
+            -configuration Debug \
+            -derivedDataPath build-test \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO
+
       - name: Publish release
         if: github.ref_type == 'tag'
         env:
@@ -73,4 +87,4 @@ jobs:
           gh release create "$GITHUB_REF_NAME" "$DMG_PATH" \
             --repo "$GITHUB_REPOSITORY" \
             --title "繁體中文＋手動打卡版 $GITHUB_REF_NAME" \
-            --notes "個人改版：繁體中文介面、手動打卡、關閉自動更新。未經 Apple 公證，第一次打開需在系統設定按「仍要打開」。"
+            --notes "個人改版：繁體中文介面、手動打卡；有新版本時會通知（不會自動安裝）。未經 Apple 公證，第一次打開需在系統設定按「仍要打開」。更新時先在面板按「⋯」→「結束程式」，再把新的 App 拖進「應用程式」取代舊版，紀錄不會不見。"

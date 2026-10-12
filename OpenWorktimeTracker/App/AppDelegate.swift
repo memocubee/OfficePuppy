@@ -19,6 +19,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.mainMenu = makeMainMenu()
         // Fetch a year's holiday calendar the bundle doesn't have yet
         HolidayStore.shared.refreshIfNeeded()
+        // Look for a newer release of this fork (Sparkle stays off)
+        UpdateChecker.shared.checkIfNeeded()
         // Set notification delegate so banners show for this menu bar app
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.delegate = self
@@ -125,6 +127,17 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     ) {
         completionHandler([.banner, .sound, .list])
     }
+
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        if response.notification.request.identifier == UpdateChecker.notificationIdentifier {
+            NSWorkspace.shared.open(UpdateChecker.releasesPage)
+        }
+        completionHandler()
+    }
 }
 
 /// Keeps mouse handling in AppKit rather than in a hosted SwiftUI menu-bar label.
@@ -171,6 +184,7 @@ final class MenuBarController: NSObject {
         if popover.isShown {
             popover.performClose(nil)
         } else if let button = statusItem.button {
+            UpdateChecker.shared.checkIfNeeded()
             NSApp.activate(ignoringOtherApps: true)
             popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
             popover.contentViewController?.view.window?.makeKey()
