@@ -1,0 +1,164 @@
+name: Personal Build (zh-Hant, unsigned)
+
+# Fork build: no Apple Developer ID, so the app is ad-hoc signed and published
+# as a GitHub release. Tag with `zh-v<version>` to build. Tag builds also sign
+# the DMG with the fork's Sparkle EdDSA key and attach appcast.xml, which
+# installed copies read from releases/latest/download/appcast.xml.
+on:
+  push:
+    tags:
+      - 'zh-v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  APP_NAME: OfficePuppy
+  # What people see: the .app, DMG and release names
+  DISPLAY_NAME: Office Puppy
+  SPARKLE_VERSION: "2.10.0"
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_16.0.app/Contents/Developer
+
+      - name: Install tools
+        run: brew install xcodegen
+
+      - name: Generate Xcode Project
+        run: xcodegen generate
+
+      - name: Version
+        run: |
+          if [ "$GITHUB_REF_TYPE" = "tag" ]; then
+            VERSION="${GITHUB_REF_NAME#zh-v}"
+            # Sparkle compares CFBundleVersion, so derive a build number that
+            # always grows with the version: 0.7.9 -> 7009, 1.2.3 -> 1002003
+            IFS=. read -r MAJOR MINOR PATCH <<< "$VERSION"
+            BUILD=$(( ${MAJOR:-0} * 1000000 + ${MINOR:-0} * 1000 + ${PATCH:-0} ))
+            echo "VERSION_FLAGS=MARKETING_VERSION=$VERSION CURRENT_PROJECT_VERSION=$BUILD" >> "$GITHUB_ENV"
+          else
+            VERSION="dev-${GITHUB_SHA::7}"
+          fi
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+
+      - name: Build Release
+        run: |
+          xcodebuild build \
+            -project $APP_NAME.xcodeproj \
+            -scheme $APP_NAME \
+            -configuration Release \
+            -derivedDataPath build \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            $VERSION_FLAGS
+
+      - name: Ad-hoc sign
+        run: |
+          APP_PATH="build/Build/Products/Release/$APP_NAME.app"
+          codesign --force --deep --sign - "$APP_PATH"
+          codesign --verify --deep --strict "$APP_PATH"
+          ls "$APP_PATH/Contents/Resources" | grep lproj
+          /usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" -c "Print :CFBundleVersion" \
+            "$APP_PATH/Contents/Info.plist"
+
+      - name: Create DMG
+        run: |
+          DMG_PATH="build/${DISPLAY_NAME// /}-$VERSION.dmg"
+          # The Applications shortcut lets people drag the app straight in.
+          STAGE="build/dmg-stage"
+          mkdir -p "$STAGE"
+          cp -R "build/Build/Products/Release/$APP_NAME.app" "$STAGE/$DISPLAY_NAME.app"
+          ln -s /Applications "$STAGE/Applications"
+          hdiutil create -volname "$DISPLAY_NAME" \
+            -srcfolder "$STAGE" \
+            -ov -format UDZO "$DMG_PATH"
+          echo "DMG_PATH=$DMG_PATH" >> "$GITHUB_ENV"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dmg
+          path: ${{ env.DMG_PATH }}
+
+      # Manual runs also run the unit tests; tag builds skip them so a release
+      # is never held up by a flaky UI test.
+      - name: Test
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          xcodebuild test \
+            -project $APP_NAME.xcodeproj \
+            -scheme OfficePuppyTests \
+            -configuration Debug \
+            -derivedDataPath build-test \
+            -destination 'platform=macOS' \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO
+
+      - name: Sign update and write appcast
+        if: github.ref_type == 'tag'
+        env:
+          SPARKLE_ED_PRIVATE_KEY: ${{ secrets.SPARKLE_ED_PRIVATE_KEY }}
+        run: |
+          [ -n "$SPARKLE_ED_PRIVATE_KEY" ] || { echo "Missing secret SPARKLE_ED_PRIVATE_KEY"; exit 1; }
+          curl -sL "https://github.com/sparkle-project/Sparkle/releases/download/${SPARKLE_VERSION}/Sparkle-${SPARKLE_VERSION}.tar.xz" \
+            | tar xJ -C "$RUNNER_TEMP" ./bin/sign_update
+          KEY_FILE="$RUNNER_TEMP/sparkle_key"
+          printf '%s' "$SPARKLE_ED_PRIVATE_KEY" > "$KEY_FILE"
+          # Plain assignments, so a failing command stops the step
+          SIGNATURE=$("$RUNNER_TEMP/bin/sign_update" --ed-key-file "$KEY_FILE" -p "$DMG_PATH")
+          rm "$KEY_FILE"
+          [ ${#SIGNATURE} -eq 88 ] || { echo "Unexpected signature: $SIGNATURE"; exit 1; }
+          LENGTH=$(stat -f%z "$DMG_PATH")
+          BUILD=$(/usr/libexec/PlistBuddy -c "Print :CFBundleVersion" \
+            "build/Build/Products/Release/$APP_NAME.app/Contents/Info.plist")
+          NOTES=$(git log -1 --format=%s)
+          DMG_URL="https://github.com/$GITHUB_REPOSITORY/releases/download/$GITHUB_REF_NAME/$(basename "$DMG_PATH")"
+          export SIGNATURE LENGTH BUILD NOTES DMG_URL
+          python3 - <<'EOF'
+          import os
+          from email.utils import formatdate
+          from xml.sax.saxutils import escape, quoteattr
+          e = os.environ
+          item = f"""<?xml version="1.0" encoding="utf-8"?>
+          <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+            <channel>
+              <title>Office Puppy</title>
+              <item>
+                <title>{escape(e["VERSION"])}</title>
+                <pubDate>{formatdate(usegmt=True)}</pubDate>
+                <sparkle:version>{escape(e["BUILD"])}</sparkle:version>
+                <sparkle:shortVersionString>{escape(e["VERSION"])}</sparkle:shortVersionString>
+                <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+                <description>{escape("<p>" + escape(e["NOTES"]) + "</p>")}</description>
+                <enclosure url={quoteattr(e["DMG_URL"])} type="application/octet-stream"
+                  sparkle:edSignature={quoteattr(e["SIGNATURE"])} length={quoteattr(e["LENGTH"])} />
+              </item>
+            </channel>
+          </rss>
+          """
+          open("build/appcast.xml", "w", encoding="utf-8").write(item)
+          EOF
+          cat build/appcast.xml
+
+      - name: Publish release
+        if: github.ref_type == 'tag'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # The tagged commit's subject doubles as the "what's new" line
+          gh release create "$GITHUB_REF_NAME" "$DMG_PATH" build/appcast.xml \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Office Puppy $VERSION" \
+            --notes "這一版：$(git log -1 --format=%s)
+
+          在家工作也要打卡的 Mac 選單列小工具（繁體中文、手動打卡、會自動更新）。下載 .dmg，把 App 拖進「應用程式」。未經 Apple 公證，第一次打開需到「系統設定 → 隱私權與安全性」按「強制打開」。"

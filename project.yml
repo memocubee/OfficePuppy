@@ -1,6 +1,6 @@
-name: OpenWorktimeTracker
+name: OfficePuppy
 options:
-  bundleIdPrefix: com.openworktimetracker
+  bundleIdPrefix: com.memocubee
   deploymentTarget:
     macOS: "14.0"
   xcodeVersion: "16.0"
@@ -9,6 +9,7 @@ options:
   knownRegions:
     - en
     - de
+    - zh-Hant
   defaultLocalization: en
 
 packages:
@@ -17,21 +18,21 @@ packages:
     from: "2.6.0"
 
 targets:
-  OpenWorktimeTracker:
+  OfficePuppy:
     type: application
     platform: macOS
     sources:
-      - path: OpenWorktimeTracker
+      - path: OfficePuppy
       - path: Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.openworktimetracker.app
-        PRODUCT_NAME: OpenWorktimeTracker
+        PRODUCT_BUNDLE_IDENTIFIER: com.memocubee.officepuppy
+        PRODUCT_NAME: OfficePuppy
         DEVELOPMENT_TEAM: 8WEDM868L3
-        MARKETING_VERSION: "0.7.0"
-        CURRENT_PROJECT_VERSION: "7"
-        INFOPLIST_FILE: OpenWorktimeTracker/Resources/Info.plist
-        CODE_SIGN_ENTITLEMENTS: OpenWorktimeTracker/Resources/OpenWorktimeTracker.entitlements
+        MARKETING_VERSION: "0.8.0"
+        CURRENT_PROJECT_VERSION: "8000"
+        INFOPLIST_FILE: OfficePuppy/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: OfficePuppy/Resources/OfficePuppy.entitlements
         MACOSX_DEPLOYMENT_TARGET: "14.0"
         SWIFT_VERSION: "5.9"
         GENERATE_INFOPLIST_FILE: false
@@ -40,42 +41,42 @@ targets:
     dependencies:
       - package: Sparkle
         product: Sparkle
-      - target: WorktimeWidgetExtension
+      - target: OfficePuppyWidgetExtension
 
-  WorktimeWidgetExtension:
+  OfficePuppyWidgetExtension:
     type: extensionkit-extension
     platform: macOS
-    product: WorktimeWidget
+    product: OfficePuppyWidget
     sources:
-      - path: WorktimeWidget
+      - path: OfficePuppyWidget
         excludes:
           - Info.plist
       - path: Shared
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.openworktimetracker.app.widget
-        PRODUCT_NAME: WorktimeWidget
+        PRODUCT_BUNDLE_IDENTIFIER: com.memocubee.officepuppy.widget
+        PRODUCT_NAME: OfficePuppyWidget
         DEVELOPMENT_TEAM: 8WEDM868L3
-        MARKETING_VERSION: "0.7.0"
-        CURRENT_PROJECT_VERSION: "7"
+        MARKETING_VERSION: "0.8.0"
+        CURRENT_PROJECT_VERSION: "8000"
         MACOSX_DEPLOYMENT_TARGET: "14.0"
         SWIFT_VERSION: "5.9"
-        INFOPLIST_FILE: WorktimeWidget/Info.plist
+        INFOPLIST_FILE: OfficePuppyWidget/Info.plist
         GENERATE_INFOPLIST_FILE: false
         CODE_SIGN_STYLE: Automatic
-        CODE_SIGN_ENTITLEMENTS: WorktimeWidget/WorktimeWidget.entitlements
+        CODE_SIGN_ENTITLEMENTS: OfficePuppyWidget/OfficePuppyWidget.entitlements
         LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks
           @executable_path/../../../../Frameworks"
 
-  OpenWorktimeTrackerTests:
+  OfficePuppyTests:
     type: bundle.unit-test
     platform: macOS
     sources:
-      - path: OpenWorktimeTrackerTests
+      - path: OfficePuppyTests
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.openworktimetracker.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.memocubee.officepuppy.tests
         SWIFT_VERSION: "5.9"
         GENERATE_INFOPLIST_FILE: true
     dependencies:
-      - target: OpenWorktimeTracker
+      - target: OfficePuppy

@@ -2,15 +2,15 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Build OpenWorktimeTracker (Debug)",
+			"label": "Build OfficePuppy (Debug)",
 			"detail": "Local ad-hoc build without provisioning-only entitlements. Release signing is unchanged.",
 			"type": "shell",
 			"command": "xcodebuild",
 			"args": [
 				"-project",
-				"OpenWorktimeTracker.xcodeproj",
+				"OfficePuppy.xcodeproj",
 				"-scheme",
-				"OpenWorktimeTracker",
+				"OfficePuppy",
 				"-configuration",
 				"Debug",
 				"-derivedDataPath",

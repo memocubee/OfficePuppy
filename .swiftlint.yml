@@ -20,8 +20,8 @@ opt_in_rules:
   - yoda_condition
 
 included:
-  - OpenWorktimeTracker
-  - OpenWorktimeTrackerTests
+  - OfficePuppy
+  - OfficePuppyTests
 
 excluded:
   - build
