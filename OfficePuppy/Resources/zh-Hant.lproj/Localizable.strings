@@ -221,6 +221,12 @@
 "logEditor.error.invalidTimes" = "檢查一下上班、下班和休息時間。";
 "logEditor.error.saveFailed" = "存不進去，你的修改還在。檢查紀錄資料夾後再試一次。";
 "logEditor.error.deleteFailed" = "刪不掉，紀錄沒有變動。檢查紀錄資料夾後再試一次。";
+"logEditor.add" = "補一天紀錄";
+"logEditor.addTitle" = "補一天打卡";
+"logEditor.addDate" = "日期";
+"logEditor.addConfirm" = "加入";
+"logEditor.cancel" = "取消";
+"logEditor.error.alreadyExists" = "這天已經有紀錄了，直接點左邊那天修改就好。";
 
 /* Sparkle updates (zh-Hant fork) */
 "menubar.checkForUpdates" = "檢查更新…";

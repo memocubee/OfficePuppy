@@ -5,6 +5,7 @@ struct LogEditorView: View {
 
     @State private var entries: [TimeEntry] = []
     @State private var selectedDate: String?
+    @State private var showAddSheet = false
 
     var body: some View {
         NavigationSplitView {
@@ -14,6 +15,21 @@ struct LogEditorView: View {
             }
             .navigationSplitViewColumnWidth(min: 200, ideal: 240, max: 300)
             .onAppear { loadEntries() }
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                HStack {
+                    Button {
+                        showAddSheet = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    .buttonStyle(.borderless)
+                    .help(Text("logEditor.add"))
+                    .accessibilityLabel(Text("logEditor.add"))
+                    .keyboardShortcut("n", modifiers: .command)
+                    Spacer()
+                }
+                .padding(DesignTokens.Spacing.sm)
+            }
         } detail: {
             if let date = selectedDate,
                 let entry = entries.first(where: { $0.date == date }) {
@@ -41,6 +57,18 @@ struct LogEditorView: View {
             }
         }
         .frame(minWidth: 650, minHeight: 450)
+        .sheet(isPresented: $showAddSheet) {
+            NewLogEntryView(
+                manager: manager,
+                existingDates: Set(entries.map(\.date)),
+                onAdd: { added in
+                    showAddSheet = false
+                    loadEntries()
+                    selectedDate = added.date
+                },
+                onCancel: { showAddSheet = false }
+            )
+        }
         .alert(
             String(localized: "logEditor.error.title"),
             isPresented: Binding(

@@ -28,9 +28,11 @@ enum DailyLogMutationError: LocalizedError {
     case invalidTimes
     case saveFailed
     case deleteFailed
+    case alreadyExists
 
     var errorDescription: String? {
         switch self {
+        case .alreadyExists: return String(localized: "logEditor.error.alreadyExists")
         case .missingEntry: return String(localized: "logEditor.error.missingEntry")
         case .invalidTimes: return String(localized: "logEditor.error.invalidTimes")
         case .saveFailed: return String(localized: "logEditor.error.saveFailed")

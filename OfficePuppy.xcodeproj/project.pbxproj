@@ -24,6 +24,7 @@
 		3451AD8F4ED288E7C113085D /* LegacyMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828EA173153A935610A4D3D /* LegacyMigrationTests.swift */; };
 		3659BFDB960C8A10BCDDAC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1641E8919AADCD59A3A7ACC0 /* Assets.xcassets */; };
 		374FF97F06C190C9C86F9471 /* GlobalShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAE3DC1107481F411F6A3A /* GlobalShortcutManager.swift */; };
+		389CC321B12C7B8B82827E83 /* NewLogEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090742433221567D5DECB83 /* NewLogEntryView.swift */; };
 		3AADE202302ED3DEEA5C04AD /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256843B074AAC8637F45808 /* Clock.swift */; };
 		3B28955F29E9AF4F5D4A4CF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09B3AB560FC5D721027E36B6 /* Localizable.strings */; };
 		3B77EF285E1E4CFF5AC50349 /* OfficePuppyWidgetExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = FE1DAF9FAAA054F2DF375893 /* OfficePuppyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -61,6 +62,7 @@
 		8D91FAEC9056746FA650D407 /* HolidayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E85144E3E447753C23FCD7 /* HolidayStore.swift */; };
 		8E74DF433C9B0FD0C669316E /* WeekBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F673C0672227A3BA2115C90 /* WeekBarTests.swift */; };
 		8EC6F609F8AB6C52D23A682B /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13480AA3757F16B344EE93DC /* DesignTokens.swift */; };
+		8ED791E69A5E9BF263650953 /* WorkdayManagerAddLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A3E16AE43B65460AD9C28B /* WorkdayManagerAddLogTests.swift */; };
 		92D7BC4675366C1223FFD011 /* MaxHoursPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A40CBD1DCBC6080021A9AF /* MaxHoursPromptView.swift */; };
 		978CF9A9DF60643A80DAD9ED /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51C96CF9580F70DB362D4F /* TimeEntry.swift */; };
 		99A5CD2D57BA9492E5FE17E5 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284A6E4EA4A524F5176E972 /* Color+Extensions.swift */; };
@@ -151,6 +153,7 @@
 		253EE6BA75FD6265F3ED2ABA /* WorkdayManagerClockAndStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerClockAndStoreTests.swift; sourceTree = "<group>"; };
 		291D282D12C4C04D659EB796 /* OfficePuppyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfficePuppyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C51C96CF9580F70DB362D4F /* TimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntry.swift; sourceTree = "<group>"; };
+		3090742433221567D5DECB83 /* NewLogEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogEntryView.swift; sourceTree = "<group>"; };
 		37AC42E1C36F176FFE9A65F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		397C95FBA9A7C30B6ACE75C3 /* LegacyMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyMigration.swift; sourceTree = "<group>"; };
 		424381ACA16CFB2F72D96A4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -219,6 +222,7 @@
 		DF5BE39CE33B5422D45F5351 /* WorkdayAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayAppearance.swift; sourceTree = "<group>"; };
 		DF8AC7D1B2D1EA4BB0D02510 /* WorktimeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorktimeWidget.swift; sourceTree = "<group>"; };
 		E00D716E8E217769DC65AA24 /* taiwan-calendar-2026.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "taiwan-calendar-2026.json"; sourceTree = "<group>"; };
+		E1A3E16AE43B65460AD9C28B /* WorkdayManagerAddLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerAddLogTests.swift; sourceTree = "<group>"; };
 		E5F16357410A991073238017 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EBD85D896C331AB08C25BF44 /* CloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncManager.swift; sourceTree = "<group>"; };
 		EFE37229BA7D609B349C01D2 /* AutoBreakRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoBreakRules.swift; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 				07A40CBD1DCBC6080021A9AF /* MaxHoursPromptView.swift */,
 				19BAE3C0937CFF82F8C2E8AD /* MenuBarView.swift */,
 				8F659C62D38249E986F55F56 /* MetricCardsView.swift */,
+				3090742433221567D5DECB83 /* NewLogEntryView.swift */,
 				84C724E0F2040BDE90B08C35 /* PauseTotalEditor.swift */,
 				70856484E66692B5901EFCB1 /* SettingsView.swift */,
 				BD185FDD1424EAA7538B9148 /* SummaryStatsView.swift */,
@@ -440,6 +445,7 @@
 				BF14BB08121A88D086B0A309 /* WidgetSnapshotTests.swift */,
 				A7E8E9C0A315F3B05CBED475 /* WorkdayAppearanceTests.swift */,
 				99A09567EA0126EA407A8043 /* WorkdayDetectorTests.swift */,
+				E1A3E16AE43B65460AD9C28B /* WorkdayManagerAddLogTests.swift */,
 				253EE6BA75FD6265F3ED2ABA /* WorkdayManagerClockAndStoreTests.swift */,
 				158CF7FF1FD6854854B7591C /* WorkdayManagerIdleHandlingTests.swift */,
 				1B5DC9CDF8DF0404CF0B0C31 /* WorkdayManagerLifecycleAndMutationTests.swift */,
@@ -617,6 +623,7 @@
 				92D7BC4675366C1223FFD011 /* MaxHoursPromptView.swift in Sources */,
 				CA4C2523C390AEDC2810C8DF /* MenuBarView.swift in Sources */,
 				EFB281AB507F08C4590AD58A /* MetricCardsView.swift in Sources */,
+				389CC321B12C7B8B82827E83 /* NewLogEntryView.swift in Sources */,
 				1DD7D81C88DA62978460A97B /* NotificationManager.swift in Sources */,
 				5CC6ADB23921FF760FB533BD /* NotificationThresholds.swift in Sources */,
 				56FD7C4E4DFA65BC33275E0A /* OfficePuppyApp.swift in Sources */,
@@ -664,6 +671,7 @@
 				60511011392510561BF5FBD0 /* WorkHeatmapTests.swift in Sources */,
 				F0184094F2C4A68F728ADDD1 /* WorkdayAppearanceTests.swift in Sources */,
 				71970582C0D8CFADB1B3DC29 /* WorkdayDetectorTests.swift in Sources */,
+				8ED791E69A5E9BF263650953 /* WorkdayManagerAddLogTests.swift in Sources */,
 				75FE3CDD2CE27A8EA4B4E2B2 /* WorkdayManagerClockAndStoreTests.swift in Sources */,
 				639DFD0578B864F1566664B1 /* WorkdayManagerIdleHandlingTests.swift in Sources */,
 				6CA1B4158D11A76D2AF3F630 /* WorkdayManagerLifecycleAndMutationTests.swift in Sources */,
