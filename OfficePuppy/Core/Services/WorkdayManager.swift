@@ -349,39 +349,20 @@ final class WorkdayManager {
         store.loadAll()
     }
 
-    /// Add an ended Daily Log for a day the user forgot to punch. Only days
-    /// without a log, and never ending in the future.
+    /// Add an ended Daily Log for a day the user forgot to punch. See `commitAddedLog`.
     @discardableResult
     func addLog(
-        date: String, start: Date, end: Date,
-        manualPauseSeconds: TimeInterval = 0, note: String = ""
+        date: String, start: Date, end: Date, manualPauseSeconds: TimeInterval = 0, note: String = ""
     ) -> TimeEntry? {
         logMutationError = nil
-        guard store.load(for: date) == nil else {
-            logger.error("Cannot add a Daily Log over an existing one: \(date)")
-            logMutationError = .alreadyExists
+        switch commitAddedLog(date: date, start: start, end: end, pause: manualPauseSeconds, note: note) {
+        case .failure(let error):
+            logMutationError = error
             return nil
+        case .success(let entry):
+            if isUnstartedToday(date) { activate(workday(for: entry)) } else { logRevision += 1 }
+            return entry
         }
-        let entry = TimeEntry(
-            date: date, startTime: start, endTime: end, status: .ended,
-            manualPauseSeconds: manualPauseSeconds, note: note, lastActivityTime: end)
-        guard hasValidLogTimes(entry), end <= clock.now else {
-            logger.error("Cannot add invalid workday times: \(date)")
-            logMutationError = .invalidTimes
-            return nil
-        }
-        guard store.saveAndWait(entry) else {
-            logger.error("Failed to commit added Daily Log: \(date)")
-            logMutationError = .saveFailed
-            return nil
-        }
-        let detector = WorkdayDetector(newDayStartHour: newDayStartHour)
-        if currentWorkday == nil, date == detector.effectiveDateString(for: clock.now) {
-            activate(workday(for: entry))
-        } else {
-            logRevision += 1
-        }
-        return entry
     }
 
     @discardableResult
