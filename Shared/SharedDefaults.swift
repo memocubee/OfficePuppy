@@ -41,7 +41,7 @@ struct WidgetSnapshot: Codable, Equatable {
 }
 
 struct SharedDefaults {
-    static let appGroupIdentifier = "group.com.openworktimetracker"
+    static let appGroupIdentifier = "group.com.memocubee.officepuppy"
     static let shared = SharedDefaults()
     /// Versioned with the stored format; a value under an earlier key is ignored.
     static let snapshotKey = "widget_snapshot_v2"
@@ -70,7 +70,7 @@ struct SharedDefaults {
         let appSupport = FileManager.default.urls(
             for: .applicationSupportDirectory, in: .userDomainMask
         ).first ?? FileManager.default.temporaryDirectory
-        return appSupport.appendingPathComponent("OpenWorktimeTracker", isDirectory: true)
+        return appSupport.appendingPathComponent("OfficePuppy", isDirectory: true)
             .appendingPathComponent("widget-state.json")
     }
 

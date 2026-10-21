@@ -9,8 +9,8 @@ permissions:
   contents: write
 
 env:
-  APP_NAME: OpenWorktimeTracker
-  SCHEME: OpenWorktimeTracker
+  APP_NAME: OfficePuppy
+  SCHEME: OfficePuppy
   XCODE_VERSION: "16.0"
 
 jobs:
@@ -80,11 +80,11 @@ jobs:
         run: |
           APP_PATH="build/Build/Products/Release/${{ env.APP_NAME }}.app"
           IDENTITY="Developer ID Application"
-          ENTITLEMENTS_APP="OpenWorktimeTracker/Resources/OpenWorktimeTracker.entitlements"
-          ENTITLEMENTS_WIDGET="WorktimeWidget/WorktimeWidget.entitlements"
+          ENTITLEMENTS_APP="OfficePuppy/Resources/OfficePuppy.entitlements"
+          ENTITLEMENTS_WIDGET="OfficePuppyWidget/OfficePuppyWidget.entitlements"
 
           # Sign the widget extension first (lives under Extensions/, not PlugIns/)
-          WIDGET_PATH="$APP_PATH/Contents/Extensions/WorktimeWidget.appex"
+          WIDGET_PATH="$APP_PATH/Contents/Extensions/OfficePuppyWidget.appex"
           if [ -d "$WIDGET_PATH" ]; then
             codesign --force --options runtime --timestamp \
               --sign "$IDENTITY" \
@@ -93,7 +93,7 @@ jobs:
             echo "Widget extension signed at $WIDGET_PATH"
           else
             # Fallback: check PlugIns path
-            WIDGET_PATH="$APP_PATH/Contents/PlugIns/WorktimeWidget.appex"
+            WIDGET_PATH="$APP_PATH/Contents/PlugIns/OfficePuppyWidget.appex"
             if [ -d "$WIDGET_PATH" ]; then
               codesign --force --options runtime --timestamp \
                 --sign "$IDENTITY" \
@@ -218,7 +218,7 @@ jobs:
         with:
           name: "v${{ steps.version.outputs.VERSION }}"
           body: |
-            ## OpenWorktimeTracker v${{ steps.version.outputs.VERSION }}
+            ## OfficePuppy v${{ steps.version.outputs.VERSION }}
 
             ### Installation
             1. Download `${{ env.APP_NAME }}-${{ steps.version.outputs.VERSION }}.dmg`

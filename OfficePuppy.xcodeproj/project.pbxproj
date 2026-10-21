@@ -1,0 +1,1052 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02910C2C6652E5EBC6122F4D /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284A6E4EA4A524F5176E972 /* Color+Extensions.swift */; };
+		07473D999508680BF74A8031 /* TimeEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDAACB127AAA43927C0EF8 /* TimeEntryTests.swift */; };
+		0794F750FE815A0CAC02383A /* IdlePromptWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A31407972A26520AED7CE3 /* IdlePromptWindowController.swift */; };
+		0890C1746FD9D7EF2544B70B /* TimeInterval+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0051685304F16C532F144 /* TimeInterval+Duration.swift */; };
+		08EDA50C1513CB505F9AB461 /* taiwan-calendar-2026.json in Resources */ = {isa = PBXBuildFile; fileRef = E00D716E8E217769DC65AA24 /* taiwan-calendar-2026.json */; };
+		0C743C450CAB249F6C322E9F /* PauseTotalEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C724E0F2040BDE90B08C35 /* PauseTotalEditor.swift */; };
+		0EF51AB7CCB79D4A2B27863F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F5DBF0BF19421FA881F78 /* AppSettings.swift */; };
+		11F5AE0DD9E148BBD0A5625C /* BreakCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D290D9E31FDFAB4206E9D /* BreakCalculator.swift */; };
+		12350B9E6E708E0F47DC4322 /* WorkdayAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BE39CE33B5422D45F5351 /* WorkdayAppearance.swift */; };
+		1BD1EDEB23F0736DA9BA897B /* ThresholdLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A774F17CF180091F6460A367 /* ThresholdLevel.swift */; };
+		1DD7D81C88DA62978460A97B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0CAC2BE073F1B0270D2898 /* NotificationManager.swift */; };
+		20A961075313E365762C3313 /* AutoBreakRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE37229BA7D609B349C01D2 /* AutoBreakRules.swift */; };
+		2B2E5671ABE94B1CEE1FCE5F /* TimeInterval+Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E0051685304F16C532F144 /* TimeInterval+Duration.swift */; };
+		3001FCDCBC26AE66DFBFA278 /* ViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5CA4845E5BBE51CE76E4AD /* ViewLayoutTests.swift */; };
+		3451AD8F4ED288E7C113085D /* LegacyMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A828EA173153A935610A4D3D /* LegacyMigrationTests.swift */; };
+		3659BFDB960C8A10BCDDAC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1641E8919AADCD59A3A7ACC0 /* Assets.xcassets */; };
+		374FF97F06C190C9C86F9471 /* GlobalShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCAE3DC1107481F411F6A3A /* GlobalShortcutManager.swift */; };
+		389CC321B12C7B8B82827E83 /* NewLogEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3090742433221567D5DECB83 /* NewLogEntryView.swift */; };
+		3AADE202302ED3DEEA5C04AD /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256843B074AAC8637F45808 /* Clock.swift */; };
+		3B28955F29E9AF4F5D4A4CF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09B3AB560FC5D721027E36B6 /* Localizable.strings */; };
+		3B77EF285E1E4CFF5AC50349 /* OfficePuppyWidgetExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = FE1DAF9FAAA054F2DF375893 /* OfficePuppyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3EA9FFC22631C8089FD48093 /* WorkdayDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5E6F95A8035153C9FE82FB /* WorkdayDetector.swift */; };
+		3F1AA649D8DA17A95CC93EB2 /* WidgetSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14BB08121A88D086B0A309 /* WidgetSnapshotTests.swift */; };
+		423063CCF63EDFB5A27F8EB2 /* WorkdayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8521C8F771FAB55F3C93D4E /* WorkdayState.swift */; };
+		4956CCA37E1FE80DE122EDFE /* WorkdayManager+AddLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D583A305DBAB47C88A8E4E0 /* WorkdayManager+AddLog.swift */; };
+		4A671C4E9493E4D668C90EF5 /* WeekBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11D019AED40F52C889C229 /* WeekBar.swift */; };
+		4C1DB888F667A42DAF73E33D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260129F13B0878CBC12C1B /* AppDelegate.swift */; };
+		4E9274A4087443EFC52BB353 /* GlassContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A793AB2A804C25084005C /* GlassContainer.swift */; };
+		4F1266CB69ED5F59AFCA83E2 /* TimerDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13812C9B3FAA9F03A63C93FD /* TimerDisplayView.swift */; };
+		4FE886575F67852AB53DA244 /* LogEntryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B334F4524C9D50D3F65E6 /* LogEntryEditView.swift */; };
+		5142363FC715FD70538F1B64 /* DailyLogFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC517D4B9D920DCA41D80FF8 /* DailyLogFormatTests.swift */; };
+		554123117C7128323EBC97AD /* WorkdayManagerNotificationThresholdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E644A4E82ACE64C58485BC2 /* WorkdayManagerNotificationThresholdTests.swift */; };
+		56FD7C4E4DFA65BC33275E0A /* OfficePuppyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0EAFBD2AEC01CE62965D1 /* OfficePuppyApp.swift */; };
+		58EB9DA43EF666D7A36EE7C2 /* PersistenceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CAA09B43B980464D5D54CF /* PersistenceManagerTests.swift */; };
+		5CC6ADB23921FF760FB533BD /* NotificationThresholds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B46CAEEF7523161958BABB8 /* NotificationThresholds.swift */; };
+		60511011392510561BF5FBD0 /* WorkHeatmapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95095F22387E0B45DA24321D /* WorkHeatmapTests.swift */; };
+		61CA095804BF9F9E5ECB1287 /* BreakCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A128F7A0D6668813279359 /* BreakCalculatorTests.swift */; };
+		6307D63DE43AA7BAB8327DCF /* AppIcon.svg in Resources */ = {isa = PBXBuildFile; fileRef = BFC7B7FCFB4ECF087EBF1099 /* AppIcon.svg */; };
+		639DFD0578B864F1566664B1 /* WorkdayManagerIdleHandlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CF7FF1FD6854854B7591C /* WorkdayManagerIdleHandlingTests.swift */; };
+		63C8E0CCB900EC6D62AAB5FC /* HolidayCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542A11722850673CB35627A8 /* HolidayCalendarTests.swift */; };
+		6CA1B4158D11A76D2AF3F630 /* WorkdayManagerLifecycleAndMutationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5DC9CDF8DF0404CF0B0C31 /* WorkdayManagerLifecycleAndMutationTests.swift */; };
+		6E19A9B64FC0C8A0AE00F32E /* WorkdayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755E729391C11B1603724EC /* WorkdayManager.swift */; };
+		71299A7C4B420E178616428D /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEC86372F8B99D1FA743D21 /* ProgressBarView.swift */; };
+		71970582C0D8CFADB1B3DC29 /* WorkdayDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A09567EA0126EA407A8043 /* WorkdayDetectorTests.swift */; };
+		75FE3CDD2CE27A8EA4B4E2B2 /* WorkdayManagerClockAndStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EE6BA75FD6265F3ED2ABA /* WorkdayManagerClockAndStoreTests.swift */; };
+		7734DA25C6D85DBF957BF8F1 /* taiwan-calendar-2025.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A21609BFDB659D097F44D5B /* taiwan-calendar-2025.json */; };
+		79CA52D42A5923CDDFB38494 /* LogEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98B6EED58BEF8D1A2350CC3 /* LogEditorView.swift */; };
+		7C7637C5C8918564D214FDCE /* LegacyMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397C95FBA9A7C30B6ACE75C3 /* LegacyMigration.swift */; };
+		7CDE3E3BCF1342DEC2D21759 /* CloudSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD85D896C331AB08C25BF44 /* CloudSyncManager.swift */; };
+		7E416A2126B58C54F8D84D4D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF19AC32F20308C2D2BEA70E /* Localizable.strings */; };
+		891CAE8B95CAC097A7E50DA4 /* ThresholdLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A774F17CF180091F6460A367 /* ThresholdLevel.swift */; };
+		8A05F42544509B697EF6C0C0 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 460EB590C6B2AA2955594B66 /* Sparkle */; };
+		8AB86C5CA1F7998B6FF533C4 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E3E62F90B4D3005D18861 /* SharedDefaults.swift */; };
+		8D91FAEC9056746FA650D407 /* HolidayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E85144E3E447753C23FCD7 /* HolidayStore.swift */; };
+		8E74DF433C9B0FD0C669316E /* WeekBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F673C0672227A3BA2115C90 /* WeekBarTests.swift */; };
+		8EC6F609F8AB6C52D23A682B /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13480AA3757F16B344EE93DC /* DesignTokens.swift */; };
+		8ED791E69A5E9BF263650953 /* WorkdayManagerAddLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A3E16AE43B65460AD9C28B /* WorkdayManagerAddLogTests.swift */; };
+		92D7BC4675366C1223FFD011 /* MaxHoursPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A40CBD1DCBC6080021A9AF /* MaxHoursPromptView.swift */; };
+		978CF9A9DF60643A80DAD9ED /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C51C96CF9580F70DB362D4F /* TimeEntry.swift */; };
+		99A5CD2D57BA9492E5FE17E5 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284A6E4EA4A524F5176E972 /* Color+Extensions.swift */; };
+		9CC52032E0BA17340DEA06CF /* WorkdayManager+TotalPause.swift in Sources */ = {isa = PBXBuildFile; fileRef = D628DBDC07A2779D5F2444E8 /* WorkdayManager+TotalPause.swift */; };
+		A8DDEC084EDEA49F5F97ADA7 /* IdlePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299AF6DC0FAE00C3EF7F590 /* IdlePeriod.swift */; };
+		ABCF564D6BFCCE23C37CD6BE /* RecordingWorkdayPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F8BB2CAEBC0286A1E64EFE /* RecordingWorkdayPrompts.swift */; };
+		AF01ED4B065F12B5A7AF9405 /* IdleThreshold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B04E2DA4A314F9E03FC127C /* IdleThreshold.swift */; };
+		AF1E29592849A88B0D53F7DC /* WorktimeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E9280515E01A171D355D2C /* WorktimeWidgetBundle.swift */; };
+		AF954FDF7C1BE896219A537C /* IdleDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5981D2096AFF6B0AF05789 /* IdleDetectorTests.swift */; };
+		B52B0AE996439A359DBE0FF3 /* WorkdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B1283C1D45F2C3D15FB9F /* WorkdayTests.swift */; };
+		B54754FA36CDDAF654B0D775 /* Workday.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF8265A8B751B545D5DE4C /* Workday.swift */; };
+		B926618C149EAE2631443B2B /* WorkdayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8521C8F771FAB55F3C93D4E /* WorkdayState.swift */; };
+		B9AF2EDA852AC16A6484B3AF /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E3E62F90B4D3005D18861 /* SharedDefaults.swift */; };
+		BA874A5601839D4815BFA399 /* WorkdayManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223B3D2FA69072C2221DF52D /* WorkdayManagerTests.swift */; };
+		C3B426440C569C028BA293B5 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F49B03FD554287CE6565CF /* ActionButton.swift */; };
+		C5810B58763673C84CA8BE3B /* IdleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42898F1E67F0D53C565A851 /* IdleDetector.swift */; };
+		C90F16837E75BFA49F0AB3BC /* WorkdayManagerNotificationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F4F159435AEE1B4CD2F8E /* WorkdayManagerNotificationTestCase.swift */; };
+		CA4C2523C390AEDC2810C8DF /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BAE3C0937CFF82F8C2E8AD /* MenuBarView.swift */; };
+		CC50AD4B1CF4F1D035D4F03A /* taiwan-calendar-2027.json in Resources */ = {isa = PBXBuildFile; fileRef = C157359E7AC16C1F79DB8652 /* taiwan-calendar-2027.json */; };
+		D16FB091DFB5A8CE01B223A1 /* WorkdayManagerNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD1B1BC242089309347D27 /* WorkdayManagerNotificationTests.swift */; };
+		D2295FC6F0CF97605C07D299 /* WorkHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AA122F867D5B5DCA439278 /* WorkHeatmapView.swift */; };
+		D3DD69D28C0CA1ADDD696DE0 /* RecordingWorkdayNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFF837D5EB8B21633EF7566 /* RecordingWorkdayNotifications.swift */; };
+		D609CAACF0AAFD4714638C09 /* WorkdayManagerSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F620FC61B355BBB7C19B55 /* WorkdayManagerSettingsTests.swift */; };
+		DAD14444F0CC3C2945808EC1 /* WorkdayAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BE39CE33B5422D45F5351 /* WorkdayAppearance.swift */; };
+		DBF9D3E2B737F902BDD73492 /* IdlePromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB125CA5B5ABE921E2A71C57 /* IdlePromptView.swift */; };
+		DFA9FA6A4786E3267DE25EB5 /* WorkdayManagerTotalPauseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6C6987E475C17E4BC5759 /* WorkdayManagerTotalPauseTests.swift */; };
+		E0EC9502C81EF1F63230570D /* ManualClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E036A98E112A3C868A44A9C /* ManualClock.swift */; };
+		E15D411A975E65CE8FAC4056 /* DailyLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B24651450943BE105593124 /* DailyLogStore.swift */; };
+		E1B2BB7BFE6B883B515701B1 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D6C96554B6CA2BAC09EB0E /* PersistenceManager.swift */; };
+		E5B792CDEA6B5E6A2907123D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C97ABE548770048D1856F2 /* Date+Extensions.swift */; };
+		E60F462FE56745A337C7E7CD /* HolidayCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8139127569F9E68C2912028 /* HolidayCalendar.swift */; };
+		E9420888ED946BCE23B7BF1A /* WorktimeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8AC7D1B2D1EA4BB0D02510 /* WorktimeWidget.swift */; };
+		EDE93177646D45E1F8AFEE9C /* LogEditorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C01DACBFDE9BAB5C0ECADE /* LogEditorWindowController.swift */; };
+		EEAAFB54BA6BF996904EE136 /* WeekHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DA045E1AD32F1B2D80D2B3 /* WeekHistoryView.swift */; };
+		EF52129DEE8076A30780C9E6 /* SummaryStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD185FDD1424EAA7538B9148 /* SummaryStatsView.swift */; };
+		EFB281AB507F08C4590AD58A /* MetricCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F659C62D38249E986F55F56 /* MetricCardsView.swift */; };
+		F0184094F2C4A68F728ADDD1 /* WorkdayAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E8E9C0A315F3B05CBED475 /* WorkdayAppearanceTests.swift */; };
+		F2FE1A3EB087939FD3DFB872 /* WorkHeatmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BCE81C62D792C40E30A63 /* WorkHeatmap.swift */; };
+		FDFC8590F71F72D577EC12D8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70856484E66692B5901EFCB1 /* SettingsView.swift */; };
+		FEAFD4D2F4C84C894E15A640 /* InMemoryDailyLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF6F61C7F2D17C49354169 /* InMemoryDailyLogStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40F3FDD2E0A8F1D2880B7CA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2465432A9FF2F7AF01C0C4C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA9FE8615D6C2A3D99BB0FA8;
+			remoteInfo = OfficePuppyWidgetExtension;
+		};
+		CD7295CA90DA914D398C2C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2465432A9FF2F7AF01C0C4C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CDAC000610C9A89BB1F38DF;
+			remoteInfo = OfficePuppy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8ABD420D93383864C9F464EB /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				3B77EF285E1E4CFF5AC50349 /* OfficePuppyWidgetExtension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00DDAACB127AAA43927C0EF8 /* TimeEntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntryTests.swift; sourceTree = "<group>"; };
+		02C01DACBFDE9BAB5C0ECADE /* LogEditorWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditorWindowController.swift; sourceTree = "<group>"; };
+		07A40CBD1DCBC6080021A9AF /* MaxHoursPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHoursPromptView.swift; sourceTree = "<group>"; };
+		13480AA3757F16B344EE93DC /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		13812C9B3FAA9F03A63C93FD /* TimerDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDisplayView.swift; sourceTree = "<group>"; };
+		158CF7FF1FD6854854B7591C /* WorkdayManagerIdleHandlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerIdleHandlingTests.swift; sourceTree = "<group>"; };
+		1641E8919AADCD59A3A7ACC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17260129F13B0878CBC12C1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19BAE3C0937CFF82F8C2E8AD /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		1B04E2DA4A314F9E03FC127C /* IdleThreshold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleThreshold.swift; sourceTree = "<group>"; };
+		1B3F5DBF0BF19421FA881F78 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		1B5DC9CDF8DF0404CF0B0C31 /* WorkdayManagerLifecycleAndMutationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerLifecycleAndMutationTests.swift; sourceTree = "<group>"; };
+		223B3D2FA69072C2221DF52D /* WorkdayManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerTests.swift; sourceTree = "<group>"; };
+		253EE6BA75FD6265F3ED2ABA /* WorkdayManagerClockAndStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerClockAndStoreTests.swift; sourceTree = "<group>"; };
+		291D282D12C4C04D659EB796 /* OfficePuppyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfficePuppyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C51C96CF9580F70DB362D4F /* TimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntry.swift; sourceTree = "<group>"; };
+		3090742433221567D5DECB83 /* NewLogEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogEntryView.swift; sourceTree = "<group>"; };
+		37AC42E1C36F176FFE9A65F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		397C95FBA9A7C30B6ACE75C3 /* LegacyMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyMigration.swift; sourceTree = "<group>"; };
+		424381ACA16CFB2F72D96A4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4299AF6DC0FAE00C3EF7F590 /* IdlePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdlePeriod.swift; sourceTree = "<group>"; };
+		44CAA09B43B980464D5D54CF /* PersistenceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManagerTests.swift; sourceTree = "<group>"; };
+		44F49B03FD554287CE6565CF /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		46E0051685304F16C532F144 /* TimeInterval+Duration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Duration.swift"; sourceTree = "<group>"; };
+		4E11D019AED40F52C889C229 /* WeekBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekBar.swift; sourceTree = "<group>"; };
+		4E4475E13EA708D4F6276066 /* OfficePuppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfficePuppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB0EAFBD2AEC01CE62965D1 /* OfficePuppyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficePuppyApp.swift; sourceTree = "<group>"; };
+		542A11722850673CB35627A8 /* HolidayCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCalendarTests.swift; sourceTree = "<group>"; };
+		582B1283C1D45F2C3D15FB9F /* WorkdayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayTests.swift; sourceTree = "<group>"; };
+		5C3F4F159435AEE1B4CD2F8E /* WorkdayManagerNotificationTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerNotificationTestCase.swift; sourceTree = "<group>"; };
+		5D583A305DBAB47C88A8E4E0 /* WorkdayManager+AddLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkdayManager+AddLog.swift"; sourceTree = "<group>"; };
+		60F620FC61B355BBB7C19B55 /* WorkdayManagerSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerSettingsTests.swift; sourceTree = "<group>"; };
+		63B949477F4D520D927A90D1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6755E729391C11B1603724EC /* WorkdayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManager.swift; sourceTree = "<group>"; };
+		6B24651450943BE105593124 /* DailyLogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogStore.swift; sourceTree = "<group>"; };
+		70856484E66692B5901EFCB1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		73AD1B1BC242089309347D27 /* WorkdayManagerNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerNotificationTests.swift; sourceTree = "<group>"; };
+		742C9BFAC4FE767B25F009CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		76A128F7A0D6668813279359 /* BreakCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakCalculatorTests.swift; sourceTree = "<group>"; };
+		77F8BB2CAEBC0286A1E64EFE /* RecordingWorkdayPrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingWorkdayPrompts.swift; sourceTree = "<group>"; };
+		7E036A98E112A3C868A44A9C /* ManualClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualClock.swift; sourceTree = "<group>"; };
+		84C724E0F2040BDE90B08C35 /* PauseTotalEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseTotalEditor.swift; sourceTree = "<group>"; };
+		8A21609BFDB659D097F44D5B /* taiwan-calendar-2025.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "taiwan-calendar-2025.json"; sourceTree = "<group>"; };
+		8B46CAEEF7523161958BABB8 /* NotificationThresholds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationThresholds.swift; sourceTree = "<group>"; };
+		8BD6C6987E475C17E4BC5759 /* WorkdayManagerTotalPauseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerTotalPauseTests.swift; sourceTree = "<group>"; };
+		8D0CAC2BE073F1B0270D2898 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		8E644A4E82ACE64C58485BC2 /* WorkdayManagerNotificationThresholdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerNotificationThresholdTests.swift; sourceTree = "<group>"; };
+		8F659C62D38249E986F55F56 /* MetricCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCardsView.swift; sourceTree = "<group>"; };
+		8F673C0672227A3BA2115C90 /* WeekBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekBarTests.swift; sourceTree = "<group>"; };
+		95095F22387E0B45DA24321D /* WorkHeatmapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHeatmapTests.swift; sourceTree = "<group>"; };
+		972D6AA73036DBB2C5CA0E06 /* OfficePuppyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OfficePuppyWidget.entitlements; sourceTree = "<group>"; };
+		97AA122F867D5B5DCA439278 /* WorkHeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHeatmapView.swift; sourceTree = "<group>"; };
+		99A09567EA0126EA407A8043 /* WorkdayDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayDetectorTests.swift; sourceTree = "<group>"; };
+		9D5981D2096AFF6B0AF05789 /* IdleDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleDetectorTests.swift; sourceTree = "<group>"; };
+		A1E85144E3E447753C23FCD7 /* HolidayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayStore.swift; sourceTree = "<group>"; };
+		A256843B074AAC8637F45808 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		A284A6E4EA4A524F5176E972 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		A774F17CF180091F6460A367 /* ThresholdLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdLevel.swift; sourceTree = "<group>"; };
+		A7A31407972A26520AED7CE3 /* IdlePromptWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdlePromptWindowController.swift; sourceTree = "<group>"; };
+		A7E8E9C0A315F3B05CBED475 /* WorkdayAppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayAppearanceTests.swift; sourceTree = "<group>"; };
+		A828EA173153A935610A4D3D /* LegacyMigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyMigrationTests.swift; sourceTree = "<group>"; };
+		AB6B334F4524C9D50D3F65E6 /* LogEntryEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntryEditView.swift; sourceTree = "<group>"; };
+		AC5BCE81C62D792C40E30A63 /* WorkHeatmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkHeatmap.swift; sourceTree = "<group>"; };
+		AD6E273C82237E6E99DF09AF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ADEC86372F8B99D1FA743D21 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		B28A793AB2A804C25084005C /* GlassContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassContainer.swift; sourceTree = "<group>"; };
+		B2FF6F61C7F2D17C49354169 /* InMemoryDailyLogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryDailyLogStore.swift; sourceTree = "<group>"; };
+		B3DA045E1AD32F1B2D80D2B3 /* WeekHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekHistoryView.swift; sourceTree = "<group>"; };
+		B42898F1E67F0D53C565A851 /* IdleDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleDetector.swift; sourceTree = "<group>"; };
+		B8139127569F9E68C2912028 /* HolidayCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCalendar.swift; sourceTree = "<group>"; };
+		B98B6EED58BEF8D1A2350CC3 /* LogEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEditorView.swift; sourceTree = "<group>"; };
+		BC5E6F95A8035153C9FE82FB /* WorkdayDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayDetector.swift; sourceTree = "<group>"; };
+		BD185FDD1424EAA7538B9148 /* SummaryStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryStatsView.swift; sourceTree = "<group>"; };
+		BF14BB08121A88D086B0A309 /* WidgetSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshotTests.swift; sourceTree = "<group>"; };
+		BFC7B7FCFB4ECF087EBF1099 /* AppIcon.svg */ = {isa = PBXFileReference; path = AppIcon.svg; sourceTree = "<group>"; };
+		C157359E7AC16C1F79DB8652 /* taiwan-calendar-2027.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "taiwan-calendar-2027.json"; sourceTree = "<group>"; };
+		C8521C8F771FAB55F3C93D4E /* WorkdayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayState.swift; sourceTree = "<group>"; };
+		CB125CA5B5ABE921E2A71C57 /* IdlePromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdlePromptView.swift; sourceTree = "<group>"; };
+		CDFF837D5EB8B21633EF7566 /* RecordingWorkdayNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingWorkdayNotifications.swift; sourceTree = "<group>"; };
+		D628DBDC07A2779D5F2444E8 /* WorkdayManager+TotalPause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WorkdayManager+TotalPause.swift"; sourceTree = "<group>"; };
+		D6E9280515E01A171D355D2C /* WorktimeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorktimeWidgetBundle.swift; sourceTree = "<group>"; };
+		D9EF8265A8B751B545D5DE4C /* Workday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workday.swift; sourceTree = "<group>"; };
+		DA5CA4845E5BBE51CE76E4AD /* ViewLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayoutTests.swift; sourceTree = "<group>"; };
+		DF5BE39CE33B5422D45F5351 /* WorkdayAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayAppearance.swift; sourceTree = "<group>"; };
+		DF8AC7D1B2D1EA4BB0D02510 /* WorktimeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorktimeWidget.swift; sourceTree = "<group>"; };
+		E00D716E8E217769DC65AA24 /* taiwan-calendar-2026.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "taiwan-calendar-2026.json"; sourceTree = "<group>"; };
+		E1A3E16AE43B65460AD9C28B /* WorkdayManagerAddLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkdayManagerAddLogTests.swift; sourceTree = "<group>"; };
+		E5F16357410A991073238017 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		EBD85D896C331AB08C25BF44 /* CloudSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncManager.swift; sourceTree = "<group>"; };
+		EFE37229BA7D609B349C01D2 /* AutoBreakRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoBreakRules.swift; sourceTree = "<group>"; };
+		F2D6C96554B6CA2BAC09EB0E /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		F4C97ABE548770048D1856F2 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		F6DFED7BDDAF0153FFF3ED8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F80D290D9E31FDFAB4206E9D /* BreakCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakCalculator.swift; sourceTree = "<group>"; };
+		FB6E3E62F90B4D3005D18861 /* SharedDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDefaults.swift; sourceTree = "<group>"; };
+		FB9301D8DB9E5278A9A7802C /* OfficePuppy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OfficePuppy.entitlements; sourceTree = "<group>"; };
+		FBCAE3DC1107481F411F6A3A /* GlobalShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalShortcutManager.swift; sourceTree = "<group>"; };
+		FC517D4B9D920DCA41D80FF8 /* DailyLogFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLogFormatTests.swift; sourceTree = "<group>"; };
+		FE1DAF9FAAA054F2DF375893 /* OfficePuppyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = OfficePuppyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F8CB8BE92CB8EA848D13299 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A05F42544509B697EF6C0C0 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		049406E35E22C305BDA7C810 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41CE74D9B78FBC63C431DD2F /* Components */,
+				CB125CA5B5ABE921E2A71C57 /* IdlePromptView.swift */,
+				A7A31407972A26520AED7CE3 /* IdlePromptWindowController.swift */,
+				B98B6EED58BEF8D1A2350CC3 /* LogEditorView.swift */,
+				02C01DACBFDE9BAB5C0ECADE /* LogEditorWindowController.swift */,
+				AB6B334F4524C9D50D3F65E6 /* LogEntryEditView.swift */,
+				07A40CBD1DCBC6080021A9AF /* MaxHoursPromptView.swift */,
+				19BAE3C0937CFF82F8C2E8AD /* MenuBarView.swift */,
+				8F659C62D38249E986F55F56 /* MetricCardsView.swift */,
+				3090742433221567D5DECB83 /* NewLogEntryView.swift */,
+				84C724E0F2040BDE90B08C35 /* PauseTotalEditor.swift */,
+				70856484E66692B5901EFCB1 /* SettingsView.swift */,
+				BD185FDD1424EAA7538B9148 /* SummaryStatsView.swift */,
+				13812C9B3FAA9F03A63C93FD /* TimerDisplayView.swift */,
+				B3DA045E1AD32F1B2D80D2B3 /* WeekHistoryView.swift */,
+				97AA122F867D5B5DCA439278 /* WorkHeatmapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25A8208702589AECF2A3CDE5 = {
+			isa = PBXGroup;
+			children = (
+				9250DF239D0FD4D5C7DAC8EE /* OfficePuppy */,
+				EE09C5177FEA6DB8BBD30973 /* OfficePuppyTests */,
+				3779E0056E7FC725DD87BF01 /* OfficePuppyWidget */,
+				BF6E769EEAF9D7623E4AB9DF /* Shared */,
+				A5413A71ED2454D28E21B8F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3779E0056E7FC725DD87BF01 /* OfficePuppyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FF19AC32F20308C2D2BEA70E /* Localizable.strings */,
+				972D6AA73036DBB2C5CA0E06 /* OfficePuppyWidget.entitlements */,
+				DF8AC7D1B2D1EA4BB0D02510 /* WorktimeWidget.swift */,
+				D6E9280515E01A171D355D2C /* WorktimeWidgetBundle.swift */,
+			);
+			path = OfficePuppyWidget;
+			sourceTree = "<group>";
+		};
+		3980A0C101FF3122D031AC73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09B3AB560FC5D721027E36B6 /* Localizable.strings */,
+				BFC7B7FCFB4ECF087EBF1099 /* AppIcon.svg */,
+				1641E8919AADCD59A3A7ACC0 /* Assets.xcassets */,
+				742C9BFAC4FE767B25F009CE /* Info.plist */,
+				FB9301D8DB9E5278A9A7802C /* OfficePuppy.entitlements */,
+				8A21609BFDB659D097F44D5B /* taiwan-calendar-2025.json */,
+				E00D716E8E217769DC65AA24 /* taiwan-calendar-2026.json */,
+				C157359E7AC16C1F79DB8652 /* taiwan-calendar-2027.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41CE74D9B78FBC63C431DD2F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				44F49B03FD554287CE6565CF /* ActionButton.swift */,
+				B28A793AB2A804C25084005C /* GlassContainer.swift */,
+				ADEC86372F8B99D1FA743D21 /* ProgressBarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5EF00F648AAEE6642348298A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F80D290D9E31FDFAB4206E9D /* BreakCalculator.swift */,
+				A256843B074AAC8637F45808 /* Clock.swift */,
+				EBD85D896C331AB08C25BF44 /* CloudSyncManager.swift */,
+				6B24651450943BE105593124 /* DailyLogStore.swift */,
+				FBCAE3DC1107481F411F6A3A /* GlobalShortcutManager.swift */,
+				A1E85144E3E447753C23FCD7 /* HolidayStore.swift */,
+				B42898F1E67F0D53C565A851 /* IdleDetector.swift */,
+				397C95FBA9A7C30B6ACE75C3 /* LegacyMigration.swift */,
+				8D0CAC2BE073F1B0270D2898 /* NotificationManager.swift */,
+				F2D6C96554B6CA2BAC09EB0E /* PersistenceManager.swift */,
+				BC5E6F95A8035153C9FE82FB /* WorkdayDetector.swift */,
+				6755E729391C11B1603724EC /* WorkdayManager.swift */,
+				5D583A305DBAB47C88A8E4E0 /* WorkdayManager+AddLog.swift */,
+				D628DBDC07A2779D5F2444E8 /* WorkdayManager+TotalPause.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6A495A7A4DFD3D458A447597 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				17260129F13B0878CBC12C1B /* AppDelegate.swift */,
+				4FB0EAFBD2AEC01CE62965D1 /* OfficePuppyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7C279969896E4865470E44E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B3F5DBF0BF19421FA881F78 /* AppSettings.swift */,
+				EFE37229BA7D609B349C01D2 /* AutoBreakRules.swift */,
+				B8139127569F9E68C2912028 /* HolidayCalendar.swift */,
+				4299AF6DC0FAE00C3EF7F590 /* IdlePeriod.swift */,
+				1B04E2DA4A314F9E03FC127C /* IdleThreshold.swift */,
+				8B46CAEEF7523161958BABB8 /* NotificationThresholds.swift */,
+				2C51C96CF9580F70DB362D4F /* TimeEntry.swift */,
+				4E11D019AED40F52C889C229 /* WeekBar.swift */,
+				D9EF8265A8B751B545D5DE4C /* Workday.swift */,
+				AC5BCE81C62D792C40E30A63 /* WorkHeatmap.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7FF7C0B4DB0C4D1C7F2CB33D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F4C97ABE548770048D1856F2 /* Date+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		83BA79A72AE60AC32B20D8CC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7C279969896E4865470E44E6 /* Models */,
+				5EF00F648AAEE6642348298A /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9250DF239D0FD4D5C7DAC8EE /* OfficePuppy */ = {
+			isa = PBXGroup;
+			children = (
+				6A495A7A4DFD3D458A447597 /* App */,
+				83BA79A72AE60AC32B20D8CC /* Core */,
+				AFF5F66C95F5E43DAD0A9850 /* Design */,
+				3980A0C101FF3122D031AC73 /* Resources */,
+				7FF7C0B4DB0C4D1C7F2CB33D /* Utilities */,
+				049406E35E22C305BDA7C810 /* Views */,
+			);
+			path = OfficePuppy;
+			sourceTree = "<group>";
+		};
+		A5413A71ED2454D28E21B8F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E4475E13EA708D4F6276066 /* OfficePuppy.app */,
+				291D282D12C4C04D659EB796 /* OfficePuppyTests.xctest */,
+				FE1DAF9FAAA054F2DF375893 /* OfficePuppyWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFF5F66C95F5E43DAD0A9850 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				13480AA3757F16B344EE93DC /* DesignTokens.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		BF6E769EEAF9D7623E4AB9DF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A284A6E4EA4A524F5176E972 /* Color+Extensions.swift */,
+				FB6E3E62F90B4D3005D18861 /* SharedDefaults.swift */,
+				A774F17CF180091F6460A367 /* ThresholdLevel.swift */,
+				46E0051685304F16C532F144 /* TimeInterval+Duration.swift */,
+				DF5BE39CE33B5422D45F5351 /* WorkdayAppearance.swift */,
+				C8521C8F771FAB55F3C93D4E /* WorkdayState.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EE09C5177FEA6DB8BBD30973 /* OfficePuppyTests */ = {
+			isa = PBXGroup;
+			children = (
+				76A128F7A0D6668813279359 /* BreakCalculatorTests.swift */,
+				FC517D4B9D920DCA41D80FF8 /* DailyLogFormatTests.swift */,
+				542A11722850673CB35627A8 /* HolidayCalendarTests.swift */,
+				9D5981D2096AFF6B0AF05789 /* IdleDetectorTests.swift */,
+				B2FF6F61C7F2D17C49354169 /* InMemoryDailyLogStore.swift */,
+				A828EA173153A935610A4D3D /* LegacyMigrationTests.swift */,
+				7E036A98E112A3C868A44A9C /* ManualClock.swift */,
+				44CAA09B43B980464D5D54CF /* PersistenceManagerTests.swift */,
+				CDFF837D5EB8B21633EF7566 /* RecordingWorkdayNotifications.swift */,
+				77F8BB2CAEBC0286A1E64EFE /* RecordingWorkdayPrompts.swift */,
+				00DDAACB127AAA43927C0EF8 /* TimeEntryTests.swift */,
+				DA5CA4845E5BBE51CE76E4AD /* ViewLayoutTests.swift */,
+				8F673C0672227A3BA2115C90 /* WeekBarTests.swift */,
+				BF14BB08121A88D086B0A309 /* WidgetSnapshotTests.swift */,
+				A7E8E9C0A315F3B05CBED475 /* WorkdayAppearanceTests.swift */,
+				99A09567EA0126EA407A8043 /* WorkdayDetectorTests.swift */,
+				E1A3E16AE43B65460AD9C28B /* WorkdayManagerAddLogTests.swift */,
+				253EE6BA75FD6265F3ED2ABA /* WorkdayManagerClockAndStoreTests.swift */,
+				158CF7FF1FD6854854B7591C /* WorkdayManagerIdleHandlingTests.swift */,
+				1B5DC9CDF8DF0404CF0B0C31 /* WorkdayManagerLifecycleAndMutationTests.swift */,
+				5C3F4F159435AEE1B4CD2F8E /* WorkdayManagerNotificationTestCase.swift */,
+				73AD1B1BC242089309347D27 /* WorkdayManagerNotificationTests.swift */,
+				8E644A4E82ACE64C58485BC2 /* WorkdayManagerNotificationThresholdTests.swift */,
+				60F620FC61B355BBB7C19B55 /* WorkdayManagerSettingsTests.swift */,
+				223B3D2FA69072C2221DF52D /* WorkdayManagerTests.swift */,
+				8BD6C6987E475C17E4BC5759 /* WorkdayManagerTotalPauseTests.swift */,
+				582B1283C1D45F2C3D15FB9F /* WorkdayTests.swift */,
+				95095F22387E0B45DA24321D /* WorkHeatmapTests.swift */,
+			);
+			path = OfficePuppyTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CDAC000610C9A89BB1F38DF /* OfficePuppy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4FF672B86443F3C5C1B3307 /* Build configuration list for PBXNativeTarget "OfficePuppy" */;
+			buildPhases = (
+				2994B40BE8023EBD3E7EC019 /* Sources */,
+				AF1F4F4819ED71DFC5E59E98 /* Resources */,
+				9F8CB8BE92CB8EA848D13299 /* Frameworks */,
+				8ABD420D93383864C9F464EB /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABBF739B47CDBA8ECF9A0787 /* PBXTargetDependency */,
+			);
+			name = OfficePuppy;
+			packageProductDependencies = (
+				460EB590C6B2AA2955594B66 /* Sparkle */,
+			);
+			productName = OfficePuppy;
+			productReference = 4E4475E13EA708D4F6276066 /* OfficePuppy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2EDB167F924CEFDFFAA3623 /* OfficePuppyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4741F164F1EDFE937DB0DBAB /* Build configuration list for PBXNativeTarget "OfficePuppyTests" */;
+			buildPhases = (
+				6FADDDD34071B355F205B5D2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D260EB99A8AA6786282D6F82 /* PBXTargetDependency */,
+			);
+			name = OfficePuppyTests;
+			packageProductDependencies = (
+			);
+			productName = OfficePuppyTests;
+			productReference = 291D282D12C4C04D659EB796 /* OfficePuppyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA9FE8615D6C2A3D99BB0FA8 /* OfficePuppyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FD6A8005E804BF5FEEBAD68 /* Build configuration list for PBXNativeTarget "OfficePuppyWidgetExtension" */;
+			buildPhases = (
+				E1E7E218FDA49DFC688A69A7 /* Sources */,
+				DCE48D268BCA79DDBE2B6B95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OfficePuppyWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = OfficePuppyWidgetExtension;
+			productReference = FE1DAF9FAAA054F2DF375893 /* OfficePuppyWidgetExtension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2465432A9FF2F7AF01C0C4C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3CDAC000610C9A89BB1F38DF = {
+						DevelopmentTeam = 8WEDM868L3;
+						ProvisioningStyle = Automatic;
+					};
+					BA9FE8615D6C2A3D99BB0FA8 = {
+						DevelopmentTeam = 8WEDM868L3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 65920E649B55ABBCFB57F53B /* Build configuration list for PBXProject "OfficePuppy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+				en,
+				"zh-Hant",
+			);
+			mainGroup = 25A8208702589AECF2A3CDE5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				11C1290EB72B5DEFEE338536 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A5413A71ED2454D28E21B8F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CDAC000610C9A89BB1F38DF /* OfficePuppy */,
+				BA9FE8615D6C2A3D99BB0FA8 /* OfficePuppyWidgetExtension */,
+				A2EDB167F924CEFDFFAA3623 /* OfficePuppyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF1F4F4819ED71DFC5E59E98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6307D63DE43AA7BAB8327DCF /* AppIcon.svg in Resources */,
+				3659BFDB960C8A10BCDDAC99 /* Assets.xcassets in Resources */,
+				3B28955F29E9AF4F5D4A4CF7 /* Localizable.strings in Resources */,
+				7734DA25C6D85DBF957BF8F1 /* taiwan-calendar-2025.json in Resources */,
+				08EDA50C1513CB505F9AB461 /* taiwan-calendar-2026.json in Resources */,
+				CC50AD4B1CF4F1D035D4F03A /* taiwan-calendar-2027.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCE48D268BCA79DDBE2B6B95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E416A2126B58C54F8D84D4D /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2994B40BE8023EBD3E7EC019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B426440C569C028BA293B5 /* ActionButton.swift in Sources */,
+				4C1DB888F667A42DAF73E33D /* AppDelegate.swift in Sources */,
+				0EF51AB7CCB79D4A2B27863F /* AppSettings.swift in Sources */,
+				20A961075313E365762C3313 /* AutoBreakRules.swift in Sources */,
+				11F5AE0DD9E148BBD0A5625C /* BreakCalculator.swift in Sources */,
+				3AADE202302ED3DEEA5C04AD /* Clock.swift in Sources */,
+				7CDE3E3BCF1342DEC2D21759 /* CloudSyncManager.swift in Sources */,
+				02910C2C6652E5EBC6122F4D /* Color+Extensions.swift in Sources */,
+				E15D411A975E65CE8FAC4056 /* DailyLogStore.swift in Sources */,
+				E5B792CDEA6B5E6A2907123D /* Date+Extensions.swift in Sources */,
+				8EC6F609F8AB6C52D23A682B /* DesignTokens.swift in Sources */,
+				4E9274A4087443EFC52BB353 /* GlassContainer.swift in Sources */,
+				374FF97F06C190C9C86F9471 /* GlobalShortcutManager.swift in Sources */,
+				E60F462FE56745A337C7E7CD /* HolidayCalendar.swift in Sources */,
+				8D91FAEC9056746FA650D407 /* HolidayStore.swift in Sources */,
+				C5810B58763673C84CA8BE3B /* IdleDetector.swift in Sources */,
+				A8DDEC084EDEA49F5F97ADA7 /* IdlePeriod.swift in Sources */,
+				DBF9D3E2B737F902BDD73492 /* IdlePromptView.swift in Sources */,
+				0794F750FE815A0CAC02383A /* IdlePromptWindowController.swift in Sources */,
+				AF01ED4B065F12B5A7AF9405 /* IdleThreshold.swift in Sources */,
+				7C7637C5C8918564D214FDCE /* LegacyMigration.swift in Sources */,
+				79CA52D42A5923CDDFB38494 /* LogEditorView.swift in Sources */,
+				EDE93177646D45E1F8AFEE9C /* LogEditorWindowController.swift in Sources */,
+				4FE886575F67852AB53DA244 /* LogEntryEditView.swift in Sources */,
+				92D7BC4675366C1223FFD011 /* MaxHoursPromptView.swift in Sources */,
+				CA4C2523C390AEDC2810C8DF /* MenuBarView.swift in Sources */,
+				EFB281AB507F08C4590AD58A /* MetricCardsView.swift in Sources */,
+				389CC321B12C7B8B82827E83 /* NewLogEntryView.swift in Sources */,
+				1DD7D81C88DA62978460A97B /* NotificationManager.swift in Sources */,
+				5CC6ADB23921FF760FB533BD /* NotificationThresholds.swift in Sources */,
+				56FD7C4E4DFA65BC33275E0A /* OfficePuppyApp.swift in Sources */,
+				0C743C450CAB249F6C322E9F /* PauseTotalEditor.swift in Sources */,
+				E1B2BB7BFE6B883B515701B1 /* PersistenceManager.swift in Sources */,
+				71299A7C4B420E178616428D /* ProgressBarView.swift in Sources */,
+				FDFC8590F71F72D577EC12D8 /* SettingsView.swift in Sources */,
+				B9AF2EDA852AC16A6484B3AF /* SharedDefaults.swift in Sources */,
+				EF52129DEE8076A30780C9E6 /* SummaryStatsView.swift in Sources */,
+				891CAE8B95CAC097A7E50DA4 /* ThresholdLevel.swift in Sources */,
+				978CF9A9DF60643A80DAD9ED /* TimeEntry.swift in Sources */,
+				0890C1746FD9D7EF2544B70B /* TimeInterval+Duration.swift in Sources */,
+				4F1266CB69ED5F59AFCA83E2 /* TimerDisplayView.swift in Sources */,
+				4A671C4E9493E4D668C90EF5 /* WeekBar.swift in Sources */,
+				EEAAFB54BA6BF996904EE136 /* WeekHistoryView.swift in Sources */,
+				F2FE1A3EB087939FD3DFB872 /* WorkHeatmap.swift in Sources */,
+				D2295FC6F0CF97605C07D299 /* WorkHeatmapView.swift in Sources */,
+				B54754FA36CDDAF654B0D775 /* Workday.swift in Sources */,
+				12350B9E6E708E0F47DC4322 /* WorkdayAppearance.swift in Sources */,
+				3EA9FFC22631C8089FD48093 /* WorkdayDetector.swift in Sources */,
+				4956CCA37E1FE80DE122EDFE /* WorkdayManager+AddLog.swift in Sources */,
+				9CC52032E0BA17340DEA06CF /* WorkdayManager+TotalPause.swift in Sources */,
+				6E19A9B64FC0C8A0AE00F32E /* WorkdayManager.swift in Sources */,
+				423063CCF63EDFB5A27F8EB2 /* WorkdayState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FADDDD34071B355F205B5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CA095804BF9F9E5ECB1287 /* BreakCalculatorTests.swift in Sources */,
+				5142363FC715FD70538F1B64 /* DailyLogFormatTests.swift in Sources */,
+				63C8E0CCB900EC6D62AAB5FC /* HolidayCalendarTests.swift in Sources */,
+				AF954FDF7C1BE896219A537C /* IdleDetectorTests.swift in Sources */,
+				FEAFD4D2F4C84C894E15A640 /* InMemoryDailyLogStore.swift in Sources */,
+				3451AD8F4ED288E7C113085D /* LegacyMigrationTests.swift in Sources */,
+				E0EC9502C81EF1F63230570D /* ManualClock.swift in Sources */,
+				58EB9DA43EF666D7A36EE7C2 /* PersistenceManagerTests.swift in Sources */,
+				D3DD69D28C0CA1ADDD696DE0 /* RecordingWorkdayNotifications.swift in Sources */,
+				ABCF564D6BFCCE23C37CD6BE /* RecordingWorkdayPrompts.swift in Sources */,
+				07473D999508680BF74A8031 /* TimeEntryTests.swift in Sources */,
+				3001FCDCBC26AE66DFBFA278 /* ViewLayoutTests.swift in Sources */,
+				8E74DF433C9B0FD0C669316E /* WeekBarTests.swift in Sources */,
+				3F1AA649D8DA17A95CC93EB2 /* WidgetSnapshotTests.swift in Sources */,
+				60511011392510561BF5FBD0 /* WorkHeatmapTests.swift in Sources */,
+				F0184094F2C4A68F728ADDD1 /* WorkdayAppearanceTests.swift in Sources */,
+				71970582C0D8CFADB1B3DC29 /* WorkdayDetectorTests.swift in Sources */,
+				8ED791E69A5E9BF263650953 /* WorkdayManagerAddLogTests.swift in Sources */,
+				75FE3CDD2CE27A8EA4B4E2B2 /* WorkdayManagerClockAndStoreTests.swift in Sources */,
+				639DFD0578B864F1566664B1 /* WorkdayManagerIdleHandlingTests.swift in Sources */,
+				6CA1B4158D11A76D2AF3F630 /* WorkdayManagerLifecycleAndMutationTests.swift in Sources */,
+				C90F16837E75BFA49F0AB3BC /* WorkdayManagerNotificationTestCase.swift in Sources */,
+				D16FB091DFB5A8CE01B223A1 /* WorkdayManagerNotificationTests.swift in Sources */,
+				554123117C7128323EBC97AD /* WorkdayManagerNotificationThresholdTests.swift in Sources */,
+				D609CAACF0AAFD4714638C09 /* WorkdayManagerSettingsTests.swift in Sources */,
+				BA874A5601839D4815BFA399 /* WorkdayManagerTests.swift in Sources */,
+				DFA9FA6A4786E3267DE25EB5 /* WorkdayManagerTotalPauseTests.swift in Sources */,
+				B52B0AE996439A359DBE0FF3 /* WorkdayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E7E218FDA49DFC688A69A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99A5CD2D57BA9492E5FE17E5 /* Color+Extensions.swift in Sources */,
+				8AB86C5CA1F7998B6FF533C4 /* SharedDefaults.swift in Sources */,
+				1BD1EDEB23F0736DA9BA897B /* ThresholdLevel.swift in Sources */,
+				2B2E5671ABE94B1CEE1FCE5F /* TimeInterval+Duration.swift in Sources */,
+				DAD14444F0CC3C2945808EC1 /* WorkdayAppearance.swift in Sources */,
+				B926618C149EAE2631443B2B /* WorkdayState.swift in Sources */,
+				E9420888ED946BCE23B7BF1A /* WorktimeWidget.swift in Sources */,
+				AF1E29592849A88B0D53F7DC /* WorktimeWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABBF739B47CDBA8ECF9A0787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA9FE8615D6C2A3D99BB0FA8 /* OfficePuppyWidgetExtension */;
+			targetProxy = 40F3FDD2E0A8F1D2880B7CA7 /* PBXContainerItemProxy */;
+		};
+		D260EB99A8AA6786282D6F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CDAC000610C9A89BB1F38DF /* OfficePuppy */;
+			targetProxy = CD7295CA90DA914D398C2C8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09B3AB560FC5D721027E36B6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37AC42E1C36F176FFE9A65F0 /* de */,
+				F6DFED7BDDAF0153FFF3ED8E /* en */,
+				63B949477F4D520D927A90D1 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FF19AC32F20308C2D2BEA70E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD6E273C82237E6E99DF09AF /* de */,
+				424381ACA16CFB2F72D96A4C /* en */,
+				E5F16357410A991073238017 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D0FF10DFC0A3EA140065C1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		136C3FB05F0844D0F0C3682D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2348815CCCC43C9A5A50286E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy.tests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OfficePuppy.app/Contents/MacOS/OfficePuppy";
+			};
+			name = Release;
+		};
+		4DAEA9FDA9FCF1E40C89496E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OfficePuppyWidget/OfficePuppyWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 8002;
+				DEVELOPMENT_TEAM = 8WEDM868L3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OfficePuppyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy.widget;
+				PRODUCT_NAME = OfficePuppyWidget;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		57904F95D74BCEF87F72172A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OfficePuppyWidget/OfficePuppyWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 8002;
+				DEVELOPMENT_TEAM = 8WEDM868L3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OfficePuppyWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy.widget;
+				PRODUCT_NAME = OfficePuppyWidget;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		63DEBA1B9272E680E3487DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OfficePuppy/Resources/OfficePuppy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 8002;
+				DEVELOPMENT_TEAM = 8WEDM868L3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OfficePuppy/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy;
+				PRODUCT_NAME = OfficePuppy;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		9F09105C2C902CF26EEFD560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OfficePuppy/Resources/OfficePuppy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 8002;
+				DEVELOPMENT_TEAM = 8WEDM868L3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OfficePuppy/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy;
+				PRODUCT_NAME = OfficePuppy;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		D05ED55EEAB70DB262655D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy.tests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OfficePuppy.app/Contents/MacOS/OfficePuppy";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4741F164F1EDFE937DB0DBAB /* Build configuration list for PBXNativeTarget "OfficePuppyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05ED55EEAB70DB262655D50 /* Debug */,
+				2348815CCCC43C9A5A50286E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5FD6A8005E804BF5FEEBAD68 /* Build configuration list for PBXNativeTarget "OfficePuppyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAEA9FDA9FCF1E40C89496E /* Debug */,
+				57904F95D74BCEF87F72172A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		65920E649B55ABBCFB57F53B /* Build configuration list for PBXProject "OfficePuppy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D0FF10DFC0A3EA140065C1F /* Debug */,
+				136C3FB05F0844D0F0C3682D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D4FF672B86443F3C5C1B3307 /* Build configuration list for PBXNativeTarget "OfficePuppy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DEBA1B9272E680E3487DD5 /* Debug */,
+				9F09105C2C902CF26EEFD560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11C1290EB72B5DEFEE338536 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		460EB590C6B2AA2955594B66 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11C1290EB72B5DEFEE338536 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2465432A9FF2F7AF01C0C4C0 /* Project object */;
+}

@@ -1,0 +1,234 @@
+/* MenuBarView */
+"menubar.workday" = "Arbeitstag %@";
+"menubar.note" = "Notiz";
+"menubar.note.placeholder" = "Notiz für heute...";
+"menubar.pause" = "Pause";
+"menubar.resume" = "Fortsetzen";
+"menubar.endDay" = "Tag beenden";
+"menubar.start" = "Tag starten";
+"menubar.restart" = "Fortsetzen";
+"menubar.openLogFolder" = "Log-Ordner öffnen";
+"menubar.exportCSV" = "CSV exportieren...";
+"menubar.settings" = "Einstellungen...";
+"menubar.quit" = "Beenden";
+"menubar.tab" = "Ansicht";
+"menubar.tab.today" = "Heute";
+"menubar.tab.records" = "Verlauf";
+"menu.edit" = "Bearbeiten";
+"menu.undo" = "Widerrufen";
+"menu.redo" = "Wiederholen";
+"menu.cut" = "Ausschneiden";
+"menu.copy" = "Kopieren";
+"menu.paste" = "Einsetzen";
+"menu.selectAll" = "Alles auswählen";
+"menu.window" = "Fenster";
+"menu.close" = "Schließen";
+"menubar.moreActions" = "Weitere Aktionen";
+
+/* State Labels */
+"state.notStarted" = "Nicht gestartet";
+"state.running" = "Läuft";
+"state.paused" = "Pausiert";
+"state.ended" = "Beendet";
+
+/* TimerDisplayView */
+"timer.netWorkTime" = "NETTO-ARBEITSZEIT";
+
+/* MetricCardsView */
+"metric.start" = "Start";
+"metric.gross" = "Brutto";
+"metric.autoBreak" = "Auto-Pause";
+"metric.pause" = "Pausen";
+"metric.end" = "Ende";
+"metric.eta" = "Ziel erreicht um";
+"metric.autoBreak.help" = "Zusätzlicher automatischer Abzug nach deinen Pausenregeln. Bereits erfasste Pausen werden angerechnet.";
+"metric.target" = "Ziel";
+"metric.reached" = "erreicht";
+"metric.editStartTime" = "Startzeit bearbeiten";
+"metric.editEndTime" = "Endzeit bearbeiten";
+"metric.cancel" = "Abbrechen";
+"metric.save" = "Speichern";
+"metric.editPause" = "Pausenzeit bearbeiten";
+
+/* Pause total editor */
+"pauseTotal.label" = "Pause heute gesamt";
+"pauseTotal.hours" = "Std.";
+"pauseTotal.minutes" = "Min.";
+"pauseTotal.ok" = "OK";
+"pauseTotal.pausedHint" = "Du machst gerade Pause. Setze zuerst die Arbeit fort und bearbeite dann die Summe.";
+"pauseTotal.idleNote" = "Davon sind %@ Abwesenheit, als Pause gewertet; das änderst du im Arbeitszeit-Protokoll.";
+"pauseTotal.error.belowIdle" = "Mindestens %@ (als Pause gewertete Abwesenheit).";
+"pauseTotal.error.exceedsGross" = "Darf nicht mehr als die Bruttozeit von %@ sein.";
+"pauseTotal.error.noWorkday" = "Heute wurde noch kein Arbeitstag gestartet.";
+"pauseTotal.error.saveFailed" = "Speichern fehlgeschlagen. Prüfe den Protokollordner und versuche es erneut.";
+
+/* WeekHistoryView */
+"history.noData" = "Noch keine Daten";
+"history.tooltip.overtime" = "%1$ld Std. %2$ld Min. über dem Ziel";
+"week.thisWeek" = "Diese Woche";
+"week.lastWeek" = "Letzte Woche";
+"week.previous" = "Vorherige Woche";
+"week.next" = "Nächste Woche";
+"week.backToThisWeek" = "Zurück zu dieser Woche";
+"week.workedOfExpected" = "%1$@ von %2$@";
+"week.expected.help" = "Soll: %1$ld Arbeitstage × %2$@ Std. (Feiertage frei)";
+"week.remaining" = "noch %@";
+"week.over" = "+%@ über Soll";
+"week.short" = "%@ unter Soll";
+"week.onTarget" = "Soll erreicht";
+"week.dayOff" = "Frei";
+"week.holiday" = "%2$@ %1$@ %3$@";
+
+/* SummaryStatsView */
+"summary.title" = "ZUSAMMENFASSUNG";
+"summary.week" = "Woche";
+"summary.month" = "Monat";
+"summary.weekOf" = "Woche ab %@";
+"summary.noData" = "Keine Daten für diesen Zeitraum";
+"summary.totalHours" = "Gesamt";
+"summary.workDays" = "Arbeitstage";
+"summary.dailyAvg" = "Tagesschnitt";
+"summary.overtime" = "Überstunden";
+"summary.period" = "Auswertungszeitraum";
+
+/* WorkHeatmapView */
+"heatmap.title" = "LETZTE 6 MONATE";
+"heatmap.workedDays" = "Arbeitstage";
+"heatmap.average" = "Ø pro Tag";
+"heatmap.days" = "%ld Tage";
+"heatmap.hours" = "%@ Std.";
+"heatmap.tooltip.date" = "%2$@, %1$@";
+"heatmap.tooltip" = "%1$@ · %2$@–%3$@ · %4$@ Std. netto";
+"heatmap.tooltip.empty" = "%@ · Nicht gearbeitet";
+"heatmap.running" = "jetzt";
+"heatmap.legend.upTo" = "≤%@h";
+"heatmap.legend.between" = "%1$@–%2$@h";
+"heatmap.legend.above" = ">%@h";
+"heatmap.legend.holiday" = "Feiertag";
+
+/* IdlePromptView */
+"idle.newWorkday" = "Neuer Arbeitstag!";
+"idle.inactivityDetected" = "Inaktivität erkannt";
+"idle.youWereInactive" = "Du warst %@ inaktiv";
+"idle.wasWorkTime" = "Als Arbeitszeit zählen";
+"idle.wasPause" = "Als Pause erfassen";
+"idle.work.detail" = "Zum Beispiel ein Meeting. Die Zeit bleibt erhalten.";
+"idle.pause.detail" = "Diesen Zeitraum von der Arbeitszeit abziehen.";
+"idle.decisionHelp" = "Wie soll dieser Zeitraum erfasst werden?";
+"idle.dayActions" = "Arbeitstag anpassen";
+"idle.endYesterday" = "Gestern um %@ beenden";
+"idle.startToday" = "Heute jetzt starten";
+"idle.countAsWork" = "Alles als Arbeitszeit zählen";
+
+"idle.endDay" = "Tag beenden";
+"idle.endDay.atTime" = "Tag beenden um %@";
+"idle.endDay.afterHours" = "nach %@ Arbeitszeit";
+"idle.restart" = "Arbeit fortsetzen";
+"idle.restart.detail" = "Unterbrechung seit %@ als Pause erfassen";
+
+/* IdlePromptWindowController */
+"idle.panel.newWorkday" = "Neuer Arbeitstag";
+"idle.panel.inactivity" = "Inaktivität erkannt";
+
+/* MaxHoursPromptView */
+"maxhours.title" = "Maximale Arbeitszeit!";
+"maxhours.body" = "Du hast bereits %.1f Stunden gearbeitet. Möchtest du den Tag beenden?";
+"maxhours.endDay" = "Tag beenden";
+"maxhours.continueWorking" = "Weiterarbeiten";
+"maxhours.panel.title" = "Maximale Arbeitszeit";
+
+/* NotificationManager */
+"notification.normal.title" = "Reguläre Arbeitszeit erreicht";
+"notification.normal.body" = "Du hast %.1f Stunden gearbeitet. Zeit zum Aufhören?";
+
+/* ProgressBarView */
+"progress.goal" = "Ziel: %@";
+"notification.critical.title" = "Kritische Arbeitszeit!";
+"notification.critical.body" = "Du arbeitest seit %.1f Stunden. Du solltest jetzt gehen!";
+"notification.milestone.title" = "Maximum erreicht!";
+"notification.milestone.body" = "%.1f Stunden Arbeitszeit. Sofort aufhören!";
+"notification.newDay.title" = "Neuer Arbeitstag";
+"notification.newDay.body" = "Guten Morgen! Dein Arbeitstag wird jetzt erfasst.";
+
+/* SettingsView */
+"settings.general" = "Allgemein";
+"settings.notifications" = "Mitteilungen";
+"settings.data" = "Daten";
+"settings.appearance" = "Darstellung";
+"settings.orangeThreshold" = "Orange-Schwelle (h)";
+"settings.redThreshold" = "Rot-Schwelle (h)";
+"settings.autoBreak" = "Auto-Pause (ArbZG)";
+"settings.breakAfter6h" = "Pause nach > 6h (Min)";
+"settings.breakAfter9h" = "Pause nach > 9h (Min)";
+"settings.idleDetection" = "Inaktivitätserkennung";
+"settings.idleThreshold" = "Inaktivitätsschwelle (Min)";
+"settings.startup" = "Autostart";
+"settings.launchAtLogin" = "Beim Anmelden starten";
+"settings.enableNotifications" = "Mitteilungen aktivieren";
+"settings.thresholds" = "Schwellwerte";
+"settings.normalHours" = "Tagesziel / reguläre Arbeitszeit (h)";
+"settings.criticalHours" = "Kritisch (h)";
+"settings.milestoneHours" = "Maximum (h)";
+"settings.notificationHelp" = "Mitteilungen werden einmal pro Tag je Schwellwert gesendet. Das Tagesziel steuert auch den Fortschritt und die voraussichtliche Endzeit – unabhängig davon, ob Mitteilungen aktiviert sind.";
+"settings.logs" = "Protokolle";
+"settings.openLogFolder" = "Log-Ordner öffnen";
+"settings.chooseLogFolder" = "Log-Ordner wählen...";
+"settings.cloudSync" = "Cloud-Sync";
+"settings.syncICloud" = "Mit iCloud Drive synchronisieren";
+"settings.iCloudConnected" = "iCloud verbunden";
+"settings.iCloudUnavailable" = "iCloud nicht verfügbar. Melde dich in den Systemeinstellungen an.";
+"settings.syncNow" = "Jetzt synchronisieren";
+"settings.export" = "Export";
+"settings.exportCSV" = "Als CSV exportieren...";
+"settings.about" = "Über";
+"settings.version" = "Version";
+"settings.choosePrompt" = "Wählen";
+
+/* Accessibility */
+"timer.accessibility.netWorkTime" = "Netto-Arbeitszeit";
+"progress.accessibility.label" = "Fortschritt Tagesziel";
+"menubar.accessibility.header" = "Arbeitstag-Status";
+"settings.chooseMessage" = "Ordner für Arbeitszeitprotokolle auswählen";
+
+/* LogEditor */
+"logEditor.title" = "Arbeitszeit-Protokoll";
+"logEditor.noEntries" = "Keine Einträge vorhanden";
+"logEditor.selectEntry" = "Wähle einen Arbeitstag";
+"logEditor.unsavedChanges" = "Ungespeicherte Änderungen";
+"logEditor.discardChanges" = "Verwerfen";
+"logEditor.pauseHours" = "Pausendauer in Stunden";
+"logEditor.pauseMinutes" = "Pausendauer in Minuten";
+"logEditor.times" = "Zeiten";
+"logEditor.start" = "Startzeit";
+"logEditor.end" = "Endzeit";
+"logEditor.manualPause" = "Manuelle Pause";
+"logEditor.idleDecisions" = "Idle-Entscheidungen";
+"logEditor.work" = "Arbeit";
+"logEditor.pause" = "Pause";
+"logEditor.note" = "Notiz";
+"logEditor.computed" = "Berechnet";
+"logEditor.grossTime" = "Brutto";
+"logEditor.autoBreak" = "Auto-Pause";
+"logEditor.netTime" = "Netto";
+"logEditor.save" = "Speichern";
+"logEditor.delete" = "Eintrag löschen";
+"logEditor.deleteConfirm" = "Möchten Sie diesen Eintrag wirklich löschen?";
+"menubar.logEditor" = "Protokoll bearbeiten...";
+"logEditor.error.title" = "Protokoll konnte nicht geändert werden";
+"logEditor.error.dismiss" = "OK";
+"logEditor.error.missingEntry" = "Dieser Eintrag wurde gelöscht oder ersetzt. Schließen und öffnen Sie den Protokolleditor erneut, um ihn neu zu laden.";
+"logEditor.error.invalidTimes" = "Bitte prüfen Sie die Start-, End- und Pausenzeiten.";
+"logEditor.error.saveFailed" = "Der Eintrag konnte nicht lokal gespeichert werden. Ihre Änderungen bleiben im Editor erhalten. Prüfen Sie den Protokollordner und versuchen Sie es erneut.";
+"logEditor.error.deleteFailed" = "Der Eintrag konnte nicht gelöscht werden. Die Zeiterfassung bleibt unverändert. Prüfen Sie den Protokollordner und versuchen Sie es erneut.";
+"logEditor.add" = "Tag hinzufügen";
+"logEditor.addHelp" = "Beginn und Ende für einen vergessenen Tag nachtragen (⌘N)";
+"logEditor.addTitle" = "Vergessenen Tag nachtragen";
+"logEditor.addDate" = "Datum";
+"logEditor.addConfirm" = "Hinzufügen";
+"logEditor.cancel" = "Abbrechen";
+"logEditor.error.alreadyExists" = "Für diesen Tag gibt es schon einen Eintrag. Wählen Sie ihn links aus, um ihn zu bearbeiten.";
+"settings.manualPunch" = "Manuell einstempeln (Tag per Start-Taste beginnen)";
+
+/* Sparkle updates (zh-Hant fork) */
+"menubar.checkForUpdates" = "Nach Updates suchen …";
+"settings.autoCheckUpdates" = "Automatisch nach Updates suchen (täglich über GitHub)";

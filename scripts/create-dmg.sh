@@ -4,7 +4,7 @@ set -euo pipefail
 # Create DMG from built app
 # Usage: ./scripts/create-dmg.sh [app_path] [output_path]
 
-APP_NAME="OpenWorktimeTracker"
+APP_NAME="OfficePuppy"
 APP_PATH="${1:-build/Build/Products/Release/${APP_NAME}.app}"
 VERSION=$(defaults read "${APP_PATH}/Contents/Info.plist" CFBundleShortVersionString 2>/dev/null || echo "dev")
 DMG_PATH="${2:-build/${APP_NAME}-${VERSION}.dmg}"
