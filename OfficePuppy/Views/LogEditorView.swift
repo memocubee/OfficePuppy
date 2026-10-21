@@ -15,20 +15,19 @@ struct LogEditorView: View {
             }
             .navigationSplitViewColumnWidth(min: 200, ideal: 240, max: 300)
             .onAppear { loadEntries() }
-            .safeAreaInset(edge: .bottom, spacing: 0) {
-                HStack {
-                    Button {
-                        showAddSheet = true
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                    .buttonStyle(.borderless)
-                    .help(Text("logEditor.add"))
-                    .accessibilityLabel(Text("logEditor.add"))
-                    .keyboardShortcut("n", modifiers: .command)
-                    Spacer()
+            .safeAreaInset(edge: .top, spacing: 0) {
+                Button {
+                    showAddSheet = true
+                } label: {
+                    Label("logEditor.add", systemImage: "plus.circle.fill")
+                        .font(DesignTokens.Typography.labelLarge)
+                        .frame(maxWidth: .infinity)
                 }
-                .padding(DesignTokens.Spacing.sm)
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+                .help(Text("logEditor.addHelp"))
+                .keyboardShortcut("n", modifiers: .command)
+                .padding(DesignTokens.Spacing.md)
             }
         } detail: {
             if let date = selectedDate,

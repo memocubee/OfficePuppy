@@ -886,13 +886,13 @@
 				CODE_SIGN_ENTITLEMENTS = OfficePuppyWidget/OfficePuppyWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8001;
+				CURRENT_PROJECT_VERSION = 8002;
 				DEVELOPMENT_TEAM = 8WEDM868L3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OfficePuppyWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.8.1;
+				MARKETING_VERSION = 0.8.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy.widget;
 				PRODUCT_NAME = OfficePuppyWidget;
 				SDKROOT = macosx;
@@ -906,13 +906,13 @@
 				CODE_SIGN_ENTITLEMENTS = OfficePuppyWidget/OfficePuppyWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8001;
+				CURRENT_PROJECT_VERSION = 8002;
 				DEVELOPMENT_TEAM = 8WEDM868L3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OfficePuppyWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.8.1;
+				MARKETING_VERSION = 0.8.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy.widget;
 				PRODUCT_NAME = OfficePuppyWidget;
 				SDKROOT = macosx;
@@ -927,7 +927,7 @@
 				CODE_SIGN_ENTITLEMENTS = OfficePuppy/Resources/OfficePuppy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8001;
+				CURRENT_PROJECT_VERSION = 8002;
 				DEVELOPMENT_TEAM = 8WEDM868L3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -937,7 +937,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.8.1;
+				MARKETING_VERSION = 0.8.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy;
 				PRODUCT_NAME = OfficePuppy;
 				SDKROOT = macosx;
@@ -952,7 +952,7 @@
 				CODE_SIGN_ENTITLEMENTS = OfficePuppy/Resources/OfficePuppy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 8001;
+				CURRENT_PROJECT_VERSION = 8002;
 				DEVELOPMENT_TEAM = 8WEDM868L3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -962,7 +962,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.8.1;
+				MARKETING_VERSION = 0.8.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.memocubee.officepuppy;
 				PRODUCT_NAME = OfficePuppy;
 				SDKROOT = macosx;

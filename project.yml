@@ -29,8 +29,8 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.memocubee.officepuppy
         PRODUCT_NAME: OfficePuppy
         DEVELOPMENT_TEAM: 8WEDM868L3
-        MARKETING_VERSION: "0.8.1"
-        CURRENT_PROJECT_VERSION: "8001"
+        MARKETING_VERSION: "0.8.2"
+        CURRENT_PROJECT_VERSION: "8002"
         INFOPLIST_FILE: OfficePuppy/Resources/Info.plist
         CODE_SIGN_ENTITLEMENTS: OfficePuppy/Resources/OfficePuppy.entitlements
         MACOSX_DEPLOYMENT_TARGET: "14.0"
@@ -57,8 +57,8 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.memocubee.officepuppy.widget
         PRODUCT_NAME: OfficePuppyWidget
         DEVELOPMENT_TEAM: 8WEDM868L3
-        MARKETING_VERSION: "0.8.1"
-        CURRENT_PROJECT_VERSION: "8001"
+        MARKETING_VERSION: "0.8.2"
+        CURRENT_PROJECT_VERSION: "8002"
         MACOSX_DEPLOYMENT_TARGET: "14.0"
         SWIFT_VERSION: "5.9"
         INFOPLIST_FILE: OfficePuppyWidget/Info.plist

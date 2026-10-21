@@ -221,6 +221,7 @@
 "logEditor.error.saveFailed" = "The entry could not be saved locally. Your edits are still available. Check the log folder and try again.";
 "logEditor.error.deleteFailed" = "The entry could not be deleted. Tracking is unchanged. Check the log folder and try again.";
 "logEditor.add" = "Add a day";
+"logEditor.addHelp" = "Add start and end times for a day you forgot to track (⌘N)";
 "logEditor.addTitle" = "Add a missed day";
 "logEditor.addDate" = "Date";
 "logEditor.addConfirm" = "Add";

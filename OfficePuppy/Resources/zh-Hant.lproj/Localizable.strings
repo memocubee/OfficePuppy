@@ -222,6 +222,7 @@
 "logEditor.error.saveFailed" = "存不進去，你的修改還在。檢查紀錄資料夾後再試一次。";
 "logEditor.error.deleteFailed" = "刪不掉，紀錄沒有變動。檢查紀錄資料夾後再試一次。";
 "logEditor.add" = "補一天紀錄";
+"logEditor.addHelp" = "忘了打卡的那天，手動補上下班時間（⌘N）";
 "logEditor.addTitle" = "補一天打卡";
 "logEditor.addDate" = "日期";
 "logEditor.addConfirm" = "加入";
